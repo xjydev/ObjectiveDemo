@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--首页-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" sceneMemberID="viewController">
@@ -34,10 +34,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" title="首页" id="fru-od-3gS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="669" y="-1088"/>
         </scene>
         <!--Demo-->
         <scene sceneID="tR1-Oy-Dsa">
@@ -66,7 +67,30 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IBK-xz-VeU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1683.75" y="-1020.4225352112676"/>
+            <point key="canvasLocation" x="1517" y="-351"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="3BW-m8-urX">
+            <objects>
+                <navigationController id="gb2-87-w1P" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="e09-dB-xMn"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LuD-ro-jG0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.94865337169999997" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.91891961349999995" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textShadowColor" red="0.91891961349999995" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="lH9-Hf-YWb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HVq-d3-hAC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-78" y="-1105"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yst-hI-dom">
@@ -83,7 +107,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FGy-Sh-kOS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="671.25" y="-1020.4225352112676"/>
+            <point key="canvasLocation" x="713" y="-351"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
@@ -98,45 +122,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cwD-HH-iFO">
-                                <rect key="frame" x="55" y="263" width="210" height="42"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SkI-DF-BKJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="210" height="42"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9bS-Tw-07W">
-                                                <rect key="frame" x="0.0" y="0.0" width="210" height="42"/>
-                                                <subviews>
-                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                                        <rect key="frame" x="0.0" y="0.0" width="210" height="42"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="42" id="O9x-EU-Haz"/>
-                                                            <constraint firstAttribute="width" constant="210" id="YwT-PB-Y11"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                        <variation key="default">
-                                                            <mask key="constraints">
-                                                                <exclude reference="O9x-EU-Haz"/>
-                                                                <exclude reference="YwT-PB-Y11"/>
-                                                            </mask>
-                                                        </variation>
-                                                        <variation key="heightClass=regular">
-                                                            <mask key="constraints">
-                                                                <include reference="O9x-EU-Haz"/>
-                                                                <include reference="YwT-PB-Y11"/>
-                                                            </mask>
-                                                        </variation>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="210" height="42"/>
-                                        </variation>
-                                    </stackView>
-                                </subviews>
+                                <rect key="frame" x="55" y="263" width="210" height="50"/>
                             </stackView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
                                 <rect key="frame" x="192" y="313" width="216" height="17"/>
@@ -210,15 +196,15 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="RJZ-gS-sl6" kind="relationship" relationship="viewControllers" id="bCP-7Q-Asl"/>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="Ih4-KT-VZG"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="Ebs-UR-66s"/>
-                        <segue destination="92Q-tB-T46" kind="relationship" relationship="viewControllers" id="4XQ-ec-aMJ"/>
+                        <segue destination="gb2-87-w1P" kind="relationship" relationship="viewControllers" id="whA-sm-ajK"/>
+                        <segue destination="RJZ-gS-sl6" kind="relationship" relationship="viewControllers" id="71d-va-Inw"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="isu-P4-vsb"/>
+                        <segue destination="92Q-tB-T46" kind="relationship" relationship="viewControllers" id="cZW-gi-voa"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-102" y="-64"/>
         </scene>
     </scenes>
     <resources>

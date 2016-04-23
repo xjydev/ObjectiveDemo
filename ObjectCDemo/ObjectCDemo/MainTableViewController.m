@@ -8,6 +8,9 @@
 
 #import "MainTableViewController.h"
 #import "RunTimeViewController.h"
+#import "KvokvcViewController.h"
+#import "CycleViewController.h"
+#import "BlockViewController.h"
 @interface MainTableViewController ()
 {
     NSArray    *_mainArray;
@@ -18,7 +21,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _mainArray = @[@"runtime",@"CoreData"];
+    
+    /**
+     *  Model-View-Controller 在MVC下，所有的对象被归类为一个model，一个view，或一个controller。Model持有数据，View显示与用户交互的界面，而View Controller调解Model和View之间的交互。
+     */
+    /**
+     *  MVVM Model-View-ViewModel ，ViewModel处理Model，使View可以直接使用。
+     */
+    
+    
+    /**
+     *  每一个知识点都在这里写上。
+     */
+    _mainArray = @[@"runtime",@"CoreData",@"KVO/KVC",@"生命周期",@"Block"];
     float a = 3.15;
     NSLog(@"%.1f===%0.1f",a,a);
     // Uncomment the following line to preserve selection between presentations.
@@ -27,7 +42,6 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -96,17 +110,42 @@
     switch (indexPath.row) {
         case 0:
         {
-            [self selfPushViewWith:[[RunTimeViewController alloc]init]];
+            RunTimeViewController *o =[[RunTimeViewController alloc]init];
+            o.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:o animated:YES];
+            
         }
             break;
         case 1:
         {
-            [self selfPushViewWith:[[RunTimeViewController alloc]init]];
+            RunTimeViewController *o =[[RunTimeViewController alloc]init];
+            o.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:o animated:YES];
+           
         }
             break;
         case 2:
         {
-            [self selfPushViewWith:[[RunTimeViewController alloc]init]];
+            KvokvcViewController *o =[[KvokvcViewController alloc]init];
+            o.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:o animated:YES];
+            
+        }
+            break;
+        case 3:
+        {
+            CycleViewController *o =[[CycleViewController alloc]init];
+            o.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:o animated:YES];
+           
+        }
+            break;
+        case 4:
+        {
+            BlockViewController *o =[[BlockViewController alloc]init];
+            o.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:o animated:YES];
+            
         }
             break;
             
@@ -115,10 +154,7 @@
     }
     
 }
-- (void)selfPushViewWith:(UIViewController *)nav
-{
-   [self.navigationController pushViewController:nav animated:YES];
-}
+
 
 /*
 #pragma mark - Navigation

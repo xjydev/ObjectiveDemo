@@ -5,7 +5,11 @@
 //  Created by XiaoJingYuan on 3/24/16.
 //  Copyright © 2016 XiaoJingYuan. All rights reserved.
 //
-
+/**
+ *  iOS自带空间的研究
+ *
+ *  @return <#return value description#>
+ */
 #import "LastTableViewController.h"
 #import "XWindow.h"
 @interface LastTableViewController ()
@@ -19,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _lastArray = @[@"window"];
+    _lastArray = @[@"window",@"UIView",@"UILabel",@"UIScrollView"];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -35,12 +39,11 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
+
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
     return _lastArray.count;
 }
 
