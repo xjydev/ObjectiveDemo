@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A2243D74E8BCDF649C5F454 /* Pods_ObjectCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E3E053ACC7BC101A8C1D8D /* Pods_ObjectCDemo.framework */; };
 		FE1185311CA37D680017CFEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1185301CA37D680017CFEA /* main.m */; };
 		FE1185341CA37D680017CFEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1185331CA37D680017CFEA /* AppDelegate.m */; };
 		FE1185371CA37D680017CFEA /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1185361CA37D680017CFEA /* FirstViewController.m */; };
@@ -29,12 +30,16 @@
 		FE1EB7E01CC384F800D40400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE1EB7DF1CC384F800D40400 /* Assets.xcassets */; };
 		FE1EB7E41CC384F800D40400 /* ObjectWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FE1EB7C31CC384F800D40400 /* ObjectWatch.app */; };
 		FE1EB7EF1CC497EC00D40400 /* XTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1EB7EE1CC497EC00D40400 /* XTabBarViewController.m */; };
+		FE288EE01CE2E98B008330E3 /* API.thrift in Resources */ = {isa = PBXBuildFile; fileRef = FE288EDE1CE2E98B008330E3 /* API.thrift */; };
+		FE288EE31CE2EA07008330E3 /* ThriftManger.m in Sources */ = {isa = PBXBuildFile; fileRef = FE288EE21CE2EA07008330E3 /* ThriftManger.m */; };
 		FE58F5A41CB3B6120045C324 /* RunD.m in Sources */ = {isa = PBXBuildFile; fileRef = FE58F5A31CB3B6120045C324 /* RunD.m */; };
 		FEC09DD31CCA687B00C320FC /* CycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC09DD21CCA687B00C320FC /* CycleViewController.m */; };
 		FEC09DD71CCB24F700C320FC /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC09DD61CCB24F700C320FC /* BlockViewController.m */; };
 		FEEA49BA1CC66B040093ADBF /* KvokvcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEA49B81CC66B040093ADBF /* KvokvcViewController.m */; };
 		FEEA49BB1CC66B040093ADBF /* KvokvcViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEEA49B91CC66B040093ADBF /* KvokvcViewController.xib */; };
 		FEEA49BF1CC861B90093ADBF /* XView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEA49BE1CC861B90093ADBF /* XView.m */; };
+		FEEB27EE1CE0798C00E79568 /* UIDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEB27ED1CE0798C00E79568 /* UIDatePickerViewController.m */; };
+		FEFA76391CF01D28004CF2C3 /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFA76381CF01D28004CF2C3 /* API.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +99,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		93E3E053ACC7BC101A8C1D8D /* Pods_ObjectCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCE176A33EA281EB4DCD5D88 /* Pods-ObjectCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectCDemo/Pods-ObjectCDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F25C032C8AA32DEC50BEB247 /* Pods-ObjectCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectCDemo/Pods-ObjectCDemo.release.xcconfig"; sourceTree = "<group>"; };
 		FE11852C1CA37D680017CFEA /* ObjectCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE1185301CA37D680017CFEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FE1185321CA37D680017CFEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -136,6 +144,9 @@
 		FE1EB7E11CC384F800D40400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE1EB7ED1CC497EC00D40400 /* XTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTabBarViewController.h; sourceTree = "<group>"; };
 		FE1EB7EE1CC497EC00D40400 /* XTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTabBarViewController.m; sourceTree = "<group>"; };
+		FE288EDE1CE2E98B008330E3 /* API.thrift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = API.thrift; sourceTree = "<group>"; };
+		FE288EE11CE2EA07008330E3 /* ThriftManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThriftManger.h; sourceTree = "<group>"; };
+		FE288EE21CE2EA07008330E3 /* ThriftManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThriftManger.m; sourceTree = "<group>"; };
 		FE58F5A21CB3B6120045C324 /* RunD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunD.h; sourceTree = "<group>"; };
 		FE58F5A31CB3B6120045C324 /* RunD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunD.m; sourceTree = "<group>"; };
 		FEC09DD11CCA687B00C320FC /* CycleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleViewController.h; sourceTree = "<group>"; };
@@ -147,13 +158,25 @@
 		FEEA49B91CC66B040093ADBF /* KvokvcViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KvokvcViewController.xib; sourceTree = "<group>"; };
 		FEEA49BD1CC861B90093ADBF /* XView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XView.h; sourceTree = "<group>"; };
 		FEEA49BE1CC861B90093ADBF /* XView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XView.m; sourceTree = "<group>"; };
+		FEEB27EC1CE0798C00E79568 /* UIDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDatePickerViewController.h; sourceTree = "<group>"; };
+		FEEB27ED1CE0798C00E79568 /* UIDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDatePickerViewController.m; sourceTree = "<group>"; };
+		FEFA76371CF01D28004CF2C3 /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
+		FEFA76381CF01D28004CF2C3 /* API.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = API.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0EBA247B13A249F907ECA66C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FE1185291CA37D680017CFEA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A2243D74E8BCDF649C5F454 /* Pods_ObjectCDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +204,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13FAE18B031BA8ED14F8E1FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93E3E053ACC7BC101A8C1D8D /* Pods_ObjectCDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97CB46B154E6D1EFED573DB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCE176A33EA281EB4DCD5D88 /* Pods-ObjectCDemo.debug.xcconfig */,
+				F25C032C8AA32DEC50BEB247 /* Pods-ObjectCDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FE1185231CA37D680017CFEA = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +230,8 @@
 				FE1EB7C41CC384F800D40400 /* ObjectWatch */,
 				FE1EB7D31CC384F800D40400 /* ObjectWatch Extension */,
 				FE11852D1CA37D680017CFEA /* Products */,
+				97CB46B154E6D1EFED573DB8 /* Pods */,
+				13FAE18B031BA8ED14F8E1FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -208,6 +250,7 @@
 		FE11852E1CA37D680017CFEA /* ObjectCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FE288EDA1CE2E98B008330E3 /* Thrift */,
 				FEEA49B51CC66A930093ADBF /* grammar */,
 				FE1185321CA37D680017CFEA /* AppDelegate.h */,
 				FE1185331CA37D680017CFEA /* AppDelegate.m */,
@@ -310,6 +353,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FE288EDA1CE2E98B008330E3 /* Thrift */ = {
+			isa = PBXGroup;
+			children = (
+				FE288EDB1CE2E98B008330E3 /* gen-cocoa */,
+				FE288EDE1CE2E98B008330E3 /* API.thrift */,
+				FE288EE11CE2EA07008330E3 /* ThriftManger.h */,
+				FE288EE21CE2EA07008330E3 /* ThriftManger.m */,
+			);
+			path = Thrift;
+			sourceTree = "<group>";
+		};
+		FE288EDB1CE2E98B008330E3 /* gen-cocoa */ = {
+			isa = PBXGroup;
+			children = (
+				FEFA76371CF01D28004CF2C3 /* API.h */,
+				FEFA76381CF01D28004CF2C3 /* API.m */,
+			);
+			path = "gen-cocoa";
+			sourceTree = "<group>";
+		};
 		FEC09DD01CCA685E00C320FC /* cycle */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,6 +394,7 @@
 		FEEA49B51CC66A930093ADBF /* grammar */ = {
 			isa = PBXGroup;
 			children = (
+				FEEB27EB1CE0797C00E79568 /* UI */,
 				FEC09DD41CCB24ED00C320FC /* Block */,
 				FEC09DD01CCA685E00C320FC /* cycle */,
 				FEEA49BC1CC861970093ADBF /* UIView */,
@@ -360,6 +424,15 @@
 			name = UIView;
 			sourceTree = "<group>";
 		};
+		FEEB27EB1CE0797C00E79568 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FEEB27EC1CE0798C00E79568 /* UIDatePickerViewController.h */,
+				FEEB27ED1CE0798C00E79568 /* UIDatePickerViewController.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -367,10 +440,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE11855C1CA37D680017CFEA /* Build configuration list for PBXNativeTarget "ObjectCDemo" */;
 			buildPhases = (
+				3429B1A87547325230F63108 /* 📦 Check Pods Manifest.lock */,
 				FE1185281CA37D680017CFEA /* Sources */,
 				FE1185291CA37D680017CFEA /* Frameworks */,
 				FE11852A1CA37D680017CFEA /* Resources */,
 				FE1EB7EC1CC384F800D40400 /* Embed Watch Content */,
+				6911625C4C19753B7135A058 /* 📦 Embed Pods Frameworks */,
+				ED96D658F92FBDE88A1C9A3C /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -424,6 +500,7 @@
 			buildPhases = (
 				FE1EB7C11CC384F800D40400 /* Resources */,
 				FE1EB7EA1CC384F800D40400 /* Embed App Extensions */,
+				0EBA247B13A249F907ECA66C /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -508,6 +585,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEEA49BB1CC66B040093ADBF /* KvokvcViewController.xib in Resources */,
+				FE288EE01CE2E98B008330E3 /* API.thrift in Resources */,
 				FE1185421CA37D680017CFEA /* LaunchScreen.storyboard in Resources */,
 				FE11853F1CA37D680017CFEA /* Assets.xcassets in Resources */,
 				FE11853D1CA37D680017CFEA /* Main.storyboard in Resources */,
@@ -547,6 +625,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3429B1A87547325230F63108 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6911625C4C19753B7135A058 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ObjectCDemo/Pods-ObjectCDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED96D658F92FBDE88A1C9A3C /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ObjectCDemo/Pods-ObjectCDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FE1185281CA37D680017CFEA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -554,12 +680,15 @@
 			files = (
 				FE11853A1CA37D680017CFEA /* SecondViewController.m in Sources */,
 				FE58F5A41CB3B6120045C324 /* RunD.m in Sources */,
+				FEEB27EE1CE0798C00E79568 /* UIDatePickerViewController.m in Sources */,
 				FEC09DD31CCA687B00C320FC /* CycleViewController.m in Sources */,
 				FE1185721CA37EB40017CFEA /* LastTableViewController.m in Sources */,
 				FEC09DD71CCB24F700C320FC /* BlockViewController.m in Sources */,
+				FEFA76391CF01D28004CF2C3 /* API.m in Sources */,
 				FE1185341CA37D680017CFEA /* AppDelegate.m in Sources */,
 				FE11856E1CA37E6F0017CFEA /* MainTableViewController.m in Sources */,
 				FE1EB7EF1CC497EC00D40400 /* XTabBarViewController.m in Sources */,
+				FE288EE31CE2EA07008330E3 /* ThriftManger.m in Sources */,
 				FE1185801CA3CABD0017CFEA /* XWindow.m in Sources */,
 				FE1185751CA37F300017CFEA /* RunTimeViewController.m in Sources */,
 				FE1185371CA37D680017CFEA /* FirstViewController.m in Sources */,
@@ -730,6 +859,7 @@
 		};
 		FE11855D1CA37D680017CFEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCE176A33EA281EB4DCD5D88 /* Pods-ObjectCDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ObjectCDemo/Info.plist;
@@ -741,6 +871,7 @@
 		};
 		FE11855E1CA37D680017CFEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F25C032C8AA32DEC50BEB247 /* Pods-ObjectCDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ObjectCDemo/Info.plist;

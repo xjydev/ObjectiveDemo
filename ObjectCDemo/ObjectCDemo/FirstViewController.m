@@ -11,6 +11,7 @@
  */
 #import "FirstViewController.h"
 #import "XView.h"
+#import "ThriftManger.h"
 @interface FirstViewController ()
 {
     
@@ -23,31 +24,38 @@
     [super viewDidLoad];
     
     
-    XView  *view = [[XView  alloc]initWithFrame:CGRectMake(200, 64, 200, 200)];
-    view.backgroundColor = [UIColor blueColor];
-    [self.view addSubview:view];
+//    XView  *view = [[XView  alloc]initWithFrame:CGRectMake(200, 64, 200, 200)];
+//    view.backgroundColor = [UIColor blueColor];
+//    [self.view addSubview:view];
+//    
+//    XView *littleView = [[XView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+//    littleView.backgroundColor = [UIColor redColor];
+//    [view addSubview:littleView];
+//    
+//    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+//    label.text = @"CALayer";
+//    label.backgroundColor = [UIColor redColor];
+//    [self.view addSubview:label];
+//    
+//    UILabel *label1 = [[UILabel alloc]initWithFrame:CGRectMake(120, 120, 100, 100)];
+//    label1.backgroundColor = [UIColor greenColor];
+//    [self.view addSubview:label1];
+//    
+//    label.layer.zPosition = 0;
+//    label1.layer.zPosition = 0;
+//    
+//    [UIView animateWithDuration:3 animations:^{
+//        label.layer.zPosition = 2;
+//        label1.layer.zPosition = 1;
+//        
+//    }];
     
-    XView *littleView = [[XView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
-    littleView.backgroundColor = [UIColor redColor];
-    [view addSubview:littleView];
-    
-    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
-    label.text = @"CALayer";
-    label.backgroundColor = [UIColor redColor];
-    [self.view addSubview:label];
-    
-    UILabel *label1 = [[UILabel alloc]initWithFrame:CGRectMake(120, 120, 100, 100)];
-    label1.backgroundColor = [UIColor greenColor];
-    [self.view addSubview:label1];
-    
-    label.layer.zPosition = 0;
-    label1.layer.zPosition = 0;
-    
-    [UIView animateWithDuration:3 animations:^{
-        label.layer.zPosition = 2;
-        label1.layer.zPosition = 1;
-        
-    }];
+}
+- (IBAction)buttonAction:(id)sender {
+    [[ThriftManger alloc] sendVerification];
+}
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
     
 }
 - (void)didReceiveMemoryWarning {
