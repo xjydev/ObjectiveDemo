@@ -34,11 +34,24 @@
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    
+    NSThread *thread = [NSThread currentThread];
+    NSLog(@"00===%@",thread);
 }
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.layer.shouldRasterize = YES;
+        self.layer.rasterizationScale = [UIScreen mainScreen].scale;
+    }
+    return self;
+}
+
 - (id)init
 {
     self = [super init];
+    NSThread *thread = [NSThread currentThread];
+    NSLog(@"11===%@",thread);
     return self;
 }
 
@@ -46,7 +59,9 @@
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
-    NSLog(@"");
+  NSThread *thread = [NSThread currentThread];
+    //获取当前线程，会发现其实就是在主线程中执行的。
+    NSLog(@"22===%@",thread);
 }
 
 

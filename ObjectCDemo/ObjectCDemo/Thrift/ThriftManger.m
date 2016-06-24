@@ -12,8 +12,8 @@
 #import "TMemoryBuffer.h"
 #import "TSocketClient.h"
 
-NSString *const ServerName = @"122.144.133.170";
-UInt32 const ServerPort = 9091;
+NSString *const ServerName = @"110.110.110";
+UInt32 const ServerPort = 9090;
 
 @implementation ThriftManger
 

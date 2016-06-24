@@ -11,6 +11,10 @@
 #import "KvokvcViewController.h"
 #import "CycleViewController.h"
 #import "BlockViewController.h"
+#import "TextViewController.h"
+#import "ThreadViewController.h"
+#import "AlgorithmViewController.h"
+#import "ImageTextViewController.h"
 @interface MainTableViewController ()
 {
     NSArray    *_mainArray;
@@ -33,8 +37,19 @@
     /**
      *  每一个知识点都在这里写上。
      */
-    _mainArray = @[@"runtime",@"CoreData",@"KVO/KVC",@"生命周期",@"Block"];
+    _mainArray =
+    @[@{@"title":@" runtime",@"class":@"RunTimeViewController"},
+      @{@"title":@" Runloop",@"class":@"RounLoopViewController"},
+      @{@"title":@" CoreData",@"class":@""},
+      @{@"title":@" KVO/KVC",@"class":@"KvokvcViewController"},
+      @{@"title":@" 生命周期",@"class":@"CycleViewController"},
+      @{@"title":@" Block",@"class":@"BlockViewController"},
+      @{@"title":@" 文字",@"class":@"TextViewController"},
+      @{@"title":@" 线程",@"class":@"ThreadViewController"},
+      @{@"title":@" 算法排序",@"class":@"AlgorithmViewController"},
+      @{@"title":@" 图文",@"class":@"ImageTextViewController"}];
     float a = 3.15;
+    self.tableView.rowHeight = 60;
     NSLog(@"%.1f===%0.1f",a,a);
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -62,9 +77,22 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"maincell" forIndexPath:indexPath];
     
-    // Configure the cell...
-    cell.textLabel.text = _mainArray[indexPath.row];
+    cell.textLabel.text = _mainArray[indexPath.row][@"title"];
     return cell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSDictionary *classDict = _mainArray[indexPath.row];
+    NSString *className = classDict[@"class"];
+    if (className.length>0) {
+        UIViewController *o = [self.storyboard instantiateViewControllerWithIdentifier:className];
+        o.hidesBottomBarWhenPushed = YES;
+        o.title = className;
+        [self.navigationController pushViewController:o animated:YES];
+       
+    }
+    
+    
+    
 }
 
 /*
@@ -106,54 +134,6 @@
 
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
  */
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    switch (indexPath.row) {
-        case 0:
-        {
-            RunTimeViewController *o =[[RunTimeViewController alloc]init];
-            o.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:o animated:YES];
-            
-        }
-            break;
-        case 1:
-        {
-            RunTimeViewController *o =[[RunTimeViewController alloc]init];
-            o.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:o animated:YES];
-           
-        }
-            break;
-        case 2:
-        {
-            KvokvcViewController *o =[[KvokvcViewController alloc]init];
-            o.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:o animated:YES];
-            
-        }
-            break;
-        case 3:
-        {
-            CycleViewController *o =[[CycleViewController alloc]init];
-            o.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:o animated:YES];
-           
-        }
-            break;
-        case 4:
-        {
-            BlockViewController *o =[[BlockViewController alloc]init];
-            o.hidesBottomBarWhenPushed = YES;
-            [self.navigationController pushViewController:o animated:YES];
-            
-        }
-            break;
-            
-        default:
-            break;
-    }
-    
-}
 
 /*
 #pragma mark - Navigation

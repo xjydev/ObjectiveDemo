@@ -7,7 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
-
+@protocol RunDelegate ;
 @interface RunD : NSObject
-@property (nonatomic,strong)NSString *time;
+{
+    NSString * _birthday;
+}
+@property (nonatomic, strong)NSString *time;
+@property (nonatomic, strong)NSString *name;
+@property (nonatomic, assign)unsigned int age;
++ (instancetype)createRunDPerson;
+- (void)initWithName:(NSString *)name Age:(NSInteger)age;
+- (void)runFunc;
+- (void)runFunction;
+@end
+@protocol RunDelegate <NSObject>
+
+- (void)runDSelectAge:(unsigned int)age;
+
 @end

@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-
+#import "FirstViewController.h"
 @interface ObjectCDemoTests : XCTestCase
 
 @end
@@ -25,8 +25,10 @@
 }
 
 - (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+    FirstViewController *first = [[FirstViewController alloc]init];
+    NSString *exp = @"test";
+    NSString * s = [first getUnitTestString:@"test"];
+    XCTAssertEqualObjects(exp, s,@"pass");
 }
 
 - (void)testPerformanceExample {

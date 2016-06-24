@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9A2243D74E8BCDF649C5F454 /* Pods_ObjectCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E3E053ACC7BC101A8C1D8D /* Pods_ObjectCDemo.framework */; };
+		FE0039751D1123AB007294BB /* AlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0039741D1123AB007294BB /* AlgorithmViewController.m */; };
+		FE0039791D11274B007294BB /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0039781D11274B007294BB /* ThreadViewController.m */; };
+		FE0E2A961D06AF6400F49470 /* ImageTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0E2A951D06AF6400F49470 /* ImageTextViewController.m */; };
 		FE1185311CA37D680017CFEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1185301CA37D680017CFEA /* main.m */; };
 		FE1185341CA37D680017CFEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1185331CA37D680017CFEA /* AppDelegate.m */; };
 		FE1185371CA37D680017CFEA /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1185361CA37D680017CFEA /* FirstViewController.m */; };
@@ -21,6 +24,8 @@
 		FE1185721CA37EB40017CFEA /* LastTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1185711CA37EB40017CFEA /* LastTableViewController.m */; };
 		FE1185751CA37F300017CFEA /* RunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1185741CA37F300017CFEA /* RunTimeViewController.m */; };
 		FE1185801CA3CABD0017CFEA /* XWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FE11857F1CA3CABD0017CFEA /* XWindow.m */; };
+		FE17AC701D13E75A00CD3AA5 /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE17AC6F1D13E75A00CD3AA5 /* RunLoopViewController.m */; };
+		FE1DB0301CF2A1560061B5B2 /* xRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1DB02F1CF2A1560061B5B2 /* xRefresh.m */; };
 		FE1EB7C71CC384F800D40400 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE1EB7C51CC384F800D40400 /* Interface.storyboard */; };
 		FE1EB7C91CC384F800D40400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE1EB7C81CC384F800D40400 /* Assets.xcassets */; };
 		FE1EB7D01CC384F800D40400 /* ObjectWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FE1EB7CF1CC384F800D40400 /* ObjectWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -33,6 +38,7 @@
 		FE288EE01CE2E98B008330E3 /* API.thrift in Resources */ = {isa = PBXBuildFile; fileRef = FE288EDE1CE2E98B008330E3 /* API.thrift */; };
 		FE288EE31CE2EA07008330E3 /* ThriftManger.m in Sources */ = {isa = PBXBuildFile; fileRef = FE288EE21CE2EA07008330E3 /* ThriftManger.m */; };
 		FE58F5A41CB3B6120045C324 /* RunD.m in Sources */ = {isa = PBXBuildFile; fileRef = FE58F5A31CB3B6120045C324 /* RunD.m */; };
+		FEB99B051CF86BF6007B039F /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB99B041CF86BF6007B039F /* TextViewController.m */; };
 		FEC09DD31CCA687B00C320FC /* CycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC09DD21CCA687B00C320FC /* CycleViewController.m */; };
 		FEC09DD71CCB24F700C320FC /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC09DD61CCB24F700C320FC /* BlockViewController.m */; };
 		FEEA49BA1CC66B040093ADBF /* KvokvcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEA49B81CC66B040093ADBF /* KvokvcViewController.m */; };
@@ -102,6 +108,12 @@
 		93E3E053ACC7BC101A8C1D8D /* Pods_ObjectCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE176A33EA281EB4DCD5D88 /* Pods-ObjectCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectCDemo/Pods-ObjectCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F25C032C8AA32DEC50BEB247 /* Pods-ObjectCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectCDemo/Pods-ObjectCDemo.release.xcconfig"; sourceTree = "<group>"; };
+		FE0039731D1123AB007294BB /* AlgorithmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlgorithmViewController.h; sourceTree = "<group>"; };
+		FE0039741D1123AB007294BB /* AlgorithmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlgorithmViewController.m; sourceTree = "<group>"; };
+		FE0039771D11274B007294BB /* ThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
+		FE0039781D11274B007294BB /* ThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
+		FE0E2A941D06AF6400F49470 /* ImageTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTextViewController.h; sourceTree = "<group>"; };
+		FE0E2A951D06AF6400F49470 /* ImageTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTextViewController.m; sourceTree = "<group>"; };
 		FE11852C1CA37D680017CFEA /* ObjectCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE1185301CA37D680017CFEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FE1185321CA37D680017CFEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -128,6 +140,10 @@
 		FE1185741CA37F300017CFEA /* RunTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeViewController.m; sourceTree = "<group>"; };
 		FE11857E1CA3CABD0017CFEA /* XWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWindow.h; sourceTree = "<group>"; };
 		FE11857F1CA3CABD0017CFEA /* XWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWindow.m; sourceTree = "<group>"; };
+		FE17AC6E1D13E75A00CD3AA5 /* RunLoopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopViewController.h; sourceTree = "<group>"; };
+		FE17AC6F1D13E75A00CD3AA5 /* RunLoopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopViewController.m; sourceTree = "<group>"; };
+		FE1DB02E1CF2A1560061B5B2 /* xRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xRefresh.h; sourceTree = "<group>"; };
+		FE1DB02F1CF2A1560061B5B2 /* xRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xRefresh.m; sourceTree = "<group>"; };
 		FE1EB7C31CC384F800D40400 /* ObjectWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE1EB7C61CC384F800D40400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		FE1EB7C81CC384F800D40400 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -149,6 +165,8 @@
 		FE288EE21CE2EA07008330E3 /* ThriftManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThriftManger.m; sourceTree = "<group>"; };
 		FE58F5A21CB3B6120045C324 /* RunD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunD.h; sourceTree = "<group>"; };
 		FE58F5A31CB3B6120045C324 /* RunD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunD.m; sourceTree = "<group>"; };
+		FEB99B031CF86BF6007B039F /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
+		FEB99B041CF86BF6007B039F /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
 		FEC09DD11CCA687B00C320FC /* CycleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleViewController.h; sourceTree = "<group>"; };
 		FEC09DD21CCA687B00C320FC /* CycleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleViewController.m; sourceTree = "<group>"; };
 		FEC09DD51CCB24F700C320FC /* BlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockViewController.h; sourceTree = "<group>"; };
@@ -221,6 +239,42 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FE0039721D11237E007294BB /* algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				FE0039731D1123AB007294BB /* AlgorithmViewController.h */,
+				FE0039741D1123AB007294BB /* AlgorithmViewController.m */,
+			);
+			name = algorithm;
+			sourceTree = "<group>";
+		};
+		FE0039761D11271F007294BB /* thread */ = {
+			isa = PBXGroup;
+			children = (
+				FE0039771D11274B007294BB /* ThreadViewController.h */,
+				FE0039781D11274B007294BB /* ThreadViewController.m */,
+			);
+			name = thread;
+			sourceTree = "<group>";
+		};
+		FE00397A1D1138C5007294BB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FEEA49BC1CC861970093ADBF /* UIView */,
+			);
+			name = UI;
+			path = ../../../../Git/ipad_psr/HomeHelper/UI;
+			sourceTree = "<group>";
+		};
+		FE0E2A971D06AF6A00F49470 /* 图文 */ = {
+			isa = PBXGroup;
+			children = (
+				FE0E2A941D06AF6400F49470 /* ImageTextViewController.h */,
+				FE0E2A951D06AF6400F49470 /* ImageTextViewController.m */,
+			);
+			name = "图文";
+			sourceTree = "<group>";
+		};
 		FE1185231CA37D680017CFEA = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +304,9 @@
 		FE11852E1CA37D680017CFEA /* ObjectCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FE00397A1D1138C5007294BB /* UI */,
+				FEB99B021CF86BDE007B039F /* 文字 */,
+				FE1DB0271CF292560061B5B2 /* xRefresh */,
 				FE288EDA1CE2E98B008330E3 /* Thrift */,
 				FEEA49B51CC66A930093ADBF /* grammar */,
 				FE1185321CA37D680017CFEA /* AppDelegate.h */,
@@ -319,6 +376,24 @@
 			name = uiwindow;
 			sourceTree = "<group>";
 		};
+		FE17AC6A1D13E5F900CD3AA5 /* Runloop */ = {
+			isa = PBXGroup;
+			children = (
+				FE17AC6E1D13E75A00CD3AA5 /* RunLoopViewController.h */,
+				FE17AC6F1D13E75A00CD3AA5 /* RunLoopViewController.m */,
+			);
+			name = Runloop;
+			sourceTree = "<group>";
+		};
+		FE1DB0271CF292560061B5B2 /* xRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				FE1DB02E1CF2A1560061B5B2 /* xRefresh.h */,
+				FE1DB02F1CF2A1560061B5B2 /* xRefresh.m */,
+			);
+			path = xRefresh;
+			sourceTree = "<group>";
+		};
 		FE1EB7C41CC384F800D40400 /* ObjectWatch */ = {
 			isa = PBXGroup;
 			children = (
@@ -373,6 +448,15 @@
 			path = "gen-cocoa";
 			sourceTree = "<group>";
 		};
+		FEB99B021CF86BDE007B039F /* 文字 */ = {
+			isa = PBXGroup;
+			children = (
+				FEB99B031CF86BF6007B039F /* TextViewController.h */,
+				FEB99B041CF86BF6007B039F /* TextViewController.m */,
+			);
+			name = "文字";
+			sourceTree = "<group>";
+		};
 		FEC09DD01CCA685E00C320FC /* cycle */ = {
 			isa = PBXGroup;
 			children = (
@@ -394,10 +478,13 @@
 		FEEA49B51CC66A930093ADBF /* grammar */ = {
 			isa = PBXGroup;
 			children = (
+				FE17AC6A1D13E5F900CD3AA5 /* Runloop */,
+				FE0039761D11271F007294BB /* thread */,
+				FE0039721D11237E007294BB /* algorithm */,
+				FE0E2A971D06AF6A00F49470 /* 图文 */,
 				FEEB27EB1CE0797C00E79568 /* UI */,
 				FEC09DD41CCB24ED00C320FC /* Block */,
 				FEC09DD01CCA685E00C320FC /* cycle */,
-				FEEA49BC1CC861970093ADBF /* UIView */,
 				FEEA49B61CC66AC40093ADBF /* KVOKVC */,
 				FE11857D1CA3CA950017CFEA /* uiwindow */,
 				FE1185761CA380FD0017CFEA /* RunTime */,
@@ -422,6 +509,7 @@
 				FEEA49BE1CC861B90093ADBF /* XView.m */,
 			);
 			name = UIView;
+			path = ../../../../GitHub/ObjectiveDemo/ObjectCDemo/ObjectCDemo;
 			sourceTree = "<group>";
 		};
 		FEEB27EB1CE0797C00E79568 /* UI */ = {
@@ -682,10 +770,13 @@
 				FE58F5A41CB3B6120045C324 /* RunD.m in Sources */,
 				FEEB27EE1CE0798C00E79568 /* UIDatePickerViewController.m in Sources */,
 				FEC09DD31CCA687B00C320FC /* CycleViewController.m in Sources */,
+				FE1DB0301CF2A1560061B5B2 /* xRefresh.m in Sources */,
 				FE1185721CA37EB40017CFEA /* LastTableViewController.m in Sources */,
+				FEB99B051CF86BF6007B039F /* TextViewController.m in Sources */,
 				FEC09DD71CCB24F700C320FC /* BlockViewController.m in Sources */,
 				FEFA76391CF01D28004CF2C3 /* API.m in Sources */,
 				FE1185341CA37D680017CFEA /* AppDelegate.m in Sources */,
+				FE17AC701D13E75A00CD3AA5 /* RunLoopViewController.m in Sources */,
 				FE11856E1CA37E6F0017CFEA /* MainTableViewController.m in Sources */,
 				FE1EB7EF1CC497EC00D40400 /* XTabBarViewController.m in Sources */,
 				FE288EE31CE2EA07008330E3 /* ThriftManger.m in Sources */,
@@ -695,6 +786,9 @@
 				FEEA49BF1CC861B90093ADBF /* XView.m in Sources */,
 				FEEA49BA1CC66B040093ADBF /* KvokvcViewController.m in Sources */,
 				FE1185311CA37D680017CFEA /* main.m in Sources */,
+				FE0039751D1123AB007294BB /* AlgorithmViewController.m in Sources */,
+				FE0039791D11274B007294BB /* ThreadViewController.m in Sources */,
+				FE0E2A961D06AF6400F49470 /* ImageTextViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

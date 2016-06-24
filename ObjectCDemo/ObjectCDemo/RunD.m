@@ -9,5 +9,13 @@
 #import "RunD.h"
 
 @implementation RunD
-
+- (void)initWithName:(NSString *)name Age:(NSInteger)age{
+    
+}
+- (void)runFunc{
+    NSLog(@"runFunc1111");
+}
+- (void)runFunction{
+    NSLog(@"runFunction2222");
+}
 @end

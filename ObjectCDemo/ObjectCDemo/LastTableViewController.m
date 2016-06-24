@@ -6,7 +6,7 @@
 //  Copyright © 2016 XiaoJingYuan. All rights reserved.
 //
 /**
- *  iOS自带空间的研究
+ *  iOS自带控件的研究
  *
  *  @return <#return value description#>
  */
@@ -22,8 +22,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+     self.title = @"控件";
     
-    _lastArray = @[@"window",@"UIView",@"UILabel",@"UIScrollView"];
+    _lastArray =
+    @[@{@"title":@"UIWindow",@"class":@""},
+      @{@"title":@"UITableView",@"class":@""},
+      @{@"title":@"ScrollView",@"class":@""},
+      @{@"title":@"UICollectionView",@"class":@""},
+      @{@"title":@"UIPickerView",@"class":@""},
+      @{@"title":@"UIWebView",@"class":@""},
+      @{@"title":@"UIContainerView",@"class":@""},
+      @{@"title":@"UILabel",@"class":@""},
+      @{@"title":@"UIView",@"class":@""},
+      @{@"title":@"UIProgress",@"class":@""},
+      @{@"title":@"UIAlerView",@"class":@""},
+      @{@"title":@"UISegmented",@"class":@""},
+      @{@"title":@"UITextField",@"class":@""},
+      @{@"title":@"UITextView",@"class":@""},];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -51,7 +66,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"lastcell" forIndexPath:indexPath];
     
-    cell.textLabel.text = _lastArray[indexPath.row];
+    cell.textLabel.text = _lastArray[indexPath.row][@"title"];
     
     return cell;
 }

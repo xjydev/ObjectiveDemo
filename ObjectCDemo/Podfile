@@ -1,0 +1,19 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'ObjectCDemo' do
+
+  pod 'ReactiveCocoa'
+  pod 'ReactiveViewModel'
+  
+  pod 'thrift', '~> 0.9.3'
+  
+  pod 'AFNetworking', '~> 3.0'
+  pod 'YYKit','1.0.5'
+  pod 'NSData+Base64', '~> 1.0.0'
+  pod 'MBProgressHUD', '~> 0.9.1'
+  pod 'SDWebImage'
+  pod 'DateTools'
+  
+end
+

@@ -31,6 +31,7 @@
  *__unsafe_unretained 声明一个弱应用，但是不会自动nil化，也就是说，如果所指向的内存区域被释放了，这个指针就是一个野指针了。
  */
 @property (nonatomic,copy)NSString *str ;
-
+extern const NSString *e1;
+- (NSString *)getUnitTestString:(NSString *)str;
 @end
 

@@ -12,6 +12,7 @@
 #import "FirstViewController.h"
 #import "XView.h"
 #import "ThriftManger.h"
+
 @interface FirstViewController ()
 {
     
@@ -22,12 +23,43 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    CGFloat heih = 20;
+    
+    NSString * cLabelString = @"这是测试UILabel行间距的text。这是测试UILabel行间距的text。n 这是测试UILabel行间距的text。n 这是测试UILabel行间距的text。这是测试UILabel行间距的text。这是测试UILabel行间距的text。这是测试UILabel行间距的text。";
+    UILabel * cLabel = [[UILabel alloc]initWithFrame:CGRectMake(20, heih, 280, 200)];
+    cLabel.numberOfLines = 0;
+    cLabel.font = [UIFont systemFontOfSize:16];
+    cLabel.textColor = [UIColor grayColor];
+    
+    NSMutableAttributedString * attributedString1 = [[NSMutableAttributedString alloc] initWithString:cLabelString];
+    NSMutableParagraphStyle * paragraphStyle1 = [[NSMutableParagraphStyle alloc] init];
+    [paragraphStyle1 setLineSpacing:8];
+    [attributedString1 addAttribute:NSParagraphStyleAttributeName value:paragraphStyle1 range:NSMakeRange(0, [cLabelString length])];
+    [cLabel setAttributedText:attributedString1];
+    [cLabel sizeToFit];
+    [self.view addSubview:cLabel];
     
     
-//    XView  *view = [[XView  alloc]initWithFrame:CGRectMake(200, 64, 200, 200)];
-//    view.backgroundColor = [UIColor blueColor];
-//    [self.view addSubview:view];
-//    
+//    int i =0;
+//    while (i<100) {
+//        NSLog(@"===%d",i);
+//        while (i>3){
+//            NSLog(@"====%d",i);
+//        };
+//        NSLog(@"==%d==%d",i,i%5);
+//        while (i%5==4){
+//            NSLog(@"======%d",i);
+//        };
+//        NSLog(@"==%d",i);
+//        i++;
+//    }
+    
+    XView  *view = [[XView  alloc]initWithFrame:CGRectMake(200, 64, 200, 200)];
+    view.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:view];
+    NSThread *thread = [NSThread currentThread];
+    NSLog(@"===%@",thread);
+//
 //    XView *littleView = [[XView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
 //    littleView.backgroundColor = [UIColor redColor];
 //    [view addSubview:littleView];
@@ -51,12 +83,40 @@
 //    }];
     
 }
+- (NSString *)getUnitTestString:(NSString *)str
+{
+    return str;
+}
 - (IBAction)buttonAction:(id)sender {
     [[ThriftManger alloc] sendVerification];
+    
+    NSString *const st1 = @"ss";
+    //    st1 = @"s1";不可赋值
+    const NSString *st2 = @"ss2";
+    //指针的值可以修改，指向的值不可修改。
+    st2 = @"s2";
+    NSLog(@"%@==%@",st1,st2);
+    
+    //    extern const NSString *e1=@"11";不能初始化
+    
+    const NSString *e1 = @"e1";
+    NSLog(@"%@",e1);
+
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     
+    NSString *const st1 = @"ss";
+    //    st1 = @"s1";不可赋值
+    const NSString *st2 = @"ss2";
+    //指针的值可以修改，指向的值不可修改。
+    st2 = @"s2";
+    NSLog(@"%@==%@",st1,st2);
+    
+    //    extern const NSString *e1=@"11";不能初始化
+    
+    const NSString *e1 = @"e1";
+    NSLog(@"%@",e1);
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KvokvcViewController">
             <connections>
-                <outlet property="mainScrollView" destination="NSy-dV-uHY" id="qww-aj-aoe"/>
-                <outlet property="topButton" destination="TJo-6H-DgV" id="Xcu-zK-Sn5"/>
+                <outlet property="mainScrollView" destination="vg3-Sr-QM2" id="4S7-5Y-DJt"/>
+                <outlet property="titleLabel" destination="PMz-2k-yyH" id="142-Mw-MJ9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,98 +17,18 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NSy-dV-uHY">
-                    <rect key="frame" x="37" y="176" width="528" height="416"/>
-                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="528" id="N6k-oY-kag"/>
-                        <constraint firstAttribute="height" constant="416" id="hPO-Bm-PGL"/>
-                    </constraints>
-                    <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
-                        <rect key="frame" x="37" y="176" width="528" height="601"/>
-                    </variation>
-                    <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
-                        <rect key="frame" x="37" y="176" width="730" height="601"/>
-                    </variation>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vg3-Sr-QM2">
+                    <rect key="frame" x="61" y="159" width="240" height="175"/>
+                    <color key="backgroundColor" red="0.14901960780000001" green="0.69803921570000005" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
                 </scrollView>
-                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eLy-Je-0sL">
-                    <rect key="frame" x="199" y="38" width="223" height="85"/>
-                    <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oBQ-0t-UqT">
-                            <rect key="frame" x="0.0" y="0.0" width="223" height="85"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJo-6H-DgV">
-                                    <rect key="frame" x="0.0" y="0.0" width="223" height="85"/>
-                                    <color key="backgroundColor" red="0.94865337169999997" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" constant="223" id="XDW-fI-2xX"/>
-                                        <constraint firstAttribute="height" constant="85" id="pV2-uz-k7Z"/>
-                                        <constraint firstAttribute="width" secondItem="TJo-6H-DgV" secondAttribute="height" multiplier="223:85" id="rCi-r0-Z8X"/>
-                                    </constraints>
-                                    <state key="normal" title="Button"/>
-                                    <variation key="heightClass=regular" ambiguous="YES">
-                                        <rect key="frame" x="0.0" y="0.0" width="223" height="85"/>
-                                    </variation>
-                                </button>
-                            </subviews>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="223" id="QmJ-JC-bAg"/>
-                                <constraint firstAttribute="height" constant="85" id="u2Y-0Q-UfM"/>
-                            </constraints>
-                            <variation key="default">
-                                <mask key="constraints">
-                                    <exclude reference="QmJ-JC-bAg"/>
-                                    <exclude reference="u2Y-0Q-UfM"/>
-                                </mask>
-                            </variation>
-                            <variation key="heightClass=regular" axis="vertical" ambiguous="YES">
-                                <rect key="frame" x="0.0" y="0.0" width="223" height="85"/>
-                                <mask key="constraints">
-                                    <include reference="QmJ-JC-bAg"/>
-                                    <include reference="u2Y-0Q-UfM"/>
-                                </mask>
-                            </variation>
-                        </stackView>
-                    </subviews>
-                    <constraints>
-                        <constraint firstAttribute="trailing" secondItem="oBQ-0t-UqT" secondAttribute="trailing" id="Put-Ut-crT"/>
-                        <constraint firstItem="oBQ-0t-UqT" firstAttribute="leading" secondItem="eLy-Je-0sL" secondAttribute="leading" id="fUE-rC-Qb3"/>
-                    </constraints>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="Put-Ut-crT"/>
-                            <exclude reference="fUE-rC-Qb3"/>
-                        </mask>
-                    </variation>
-                    <variation key="heightClass=regular" axis="vertical" ambiguous="YES" misplaced="YES">
-                        <rect key="frame" x="190" y="42" width="223" height="85"/>
-                        <mask key="constraints">
-                            <include reference="Put-Ut-crT"/>
-                            <include reference="fUE-rC-Qb3"/>
-                        </mask>
-                    </variation>
-                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMz-2k-yyH">
+                    <rect key="frame" x="31" y="386" width="301" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstAttribute="trailing" secondItem="NSy-dV-uHY" secondAttribute="trailing" constant="35" id="0YI-57-Vu7"/>
-                <constraint firstItem="NSy-dV-uHY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="37" id="DR5-Jl-YN1"/>
-                <constraint firstItem="NSy-dV-uHY" firstAttribute="top" secondItem="eLy-Je-0sL" secondAttribute="bottom" constant="49" id="QOi-p2-MSu"/>
-            </constraints>
-            <variation key="default">
-                <mask key="constraints">
-                    <exclude reference="0YI-57-Vu7"/>
-                    <exclude reference="DR5-Jl-YN1"/>
-                    <exclude reference="QOi-p2-MSu"/>
-                </mask>
-            </variation>
-            <variation key="heightClass=regular">
-                <mask key="constraints">
-                    <include reference="0YI-57-Vu7"/>
-                    <include reference="DR5-Jl-YN1"/>
-                    <include reference="QOi-p2-MSu"/>
-                </mask>
-            </variation>
         </view>
     </objects>
 </document>
