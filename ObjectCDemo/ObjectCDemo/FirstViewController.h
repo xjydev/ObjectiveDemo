@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "GIFImageView.h"
 @interface FirstViewController : UIViewController
 /**
  *  atomic 默认值 通过锁定机制来确保其操作的原子性 如果两个线程同时读取一个属性，那么不论何时，总能看到有效的属性值。
@@ -31,6 +31,8 @@
  *__unsafe_unretained 声明一个弱应用，但是不会自动nil化，也就是说，如果所指向的内存区域被释放了，这个指针就是一个野指针了。
  */
 @property (nonatomic,copy)NSString *str ;
+//weak，strong都一样，应为storyboard已经强引用了。
+@property (weak, nonatomic) IBOutlet GIFImageView *gifImageView;
 extern const NSString *e1;
 - (NSString *)getUnitTestString:(NSString *)str;
 @end

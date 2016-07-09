@@ -81,6 +81,8 @@
 //        label1.layer.zPosition = 1;
 //        
 //    }];
+    [self.gifImageView setImage:[UIImage imageNamed:@"刷新静态"]];
+//    self.gifImageView.animating = YES;
     
 }
 - (NSString *)getUnitTestString:(NSString *)str
@@ -88,6 +90,7 @@
     return str;
 }
 - (IBAction)buttonAction:(id)sender {
+    
     [[ThriftManger alloc] sendVerification];
     
     NSString *const st1 = @"ss";
@@ -105,7 +108,7 @@
 }
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    
+//    self.gifImageView.animating = !self.gifImageView.animating;
     NSString *const st1 = @"ss";
     //    st1 = @"s1";不可赋值
     const NSString *st2 = @"ss2";

@@ -26,6 +26,13 @@
     NSString *dName = [NSString stringWithCString:object_getClassName(d) encoding:NSUTF8StringEncoding];
     NSLog(@"ClassName==%@===",dName);
     unsigned int count = 0;
+#pragma mark -- 添加属性
+    static char *height = "height"  ;
+    objc_setAssociatedObject(d,height, @(179), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    
+    NSLog(@"Associated==%@",objc_getAssociatedObject(d, height));
+    
+    
 #pragma mark -- 获取属性列表
     objc_property_t *propertyList = class_copyPropertyList([RunD class], &count);
     for (unsigned int i = 0; i<count; i++) {
@@ -45,6 +52,7 @@
         Method meth = methList[i];
         NSLog(@"meth == %@",NSStringFromSelector(method_getName(meth)));
     }
+    
 #pragma mark -- 获取成员变量列表
     unsigned int ivarCount = 0;
     Ivar *ivarList = class_copyIvarList([RunD class], &ivarCount);
@@ -58,6 +66,8 @@
             NSLog(@"d.name == %@",d.name);
         }
     }
+    //用完释放掉
+    free(ivarList);
 #pragma mark -- 获取协议列表
     unsigned int protocolCount = 0;
     __unsafe_unretained Protocol **protocolList = class_copyProtocolList([RunD class], &protocolCount);
@@ -78,8 +88,24 @@
     //显示runFunction方法的效果
     [d runFunc];
 #pragma mark --拦截并替换方法
+    //原方法
+    Method md = class_getInstanceMethod([RunD class], @selector(runFunction));
+    //将要替换的方法
+    Method ms = class_getInstanceMethod([self class], @selector(runTimeFunction));
+    //先尝试添加给类添加一个方法，避免原方法没有实现（runFunction）此方法。
+    BOOL adds = class_addMethod([RunD class], @selector(runFunction), method_getImplementation(ms), method_getTypeEncoding(ms));
+    if (adds) {
+       //添加成功，将原方法的实现替换到交换方法。
+        class_replaceMethod([self class], @selector(runTimeFunction), method_getImplementation(md), method_getTypeEncoding(md));
+    }
+    else
+    {
+        //添加失败说明原方法已经实现了，交换这两个方法的实现。
+        method_exchangeImplementations(md, ms);
+    }
+//应该显示的是self 的runTimeFunction方法
+    [d runFunction];
     
-
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(notificationAction) name:@"nil" object:nil];
     
     
@@ -89,6 +115,10 @@
 void runAdd(id self,SEL_cmd)
 {
     NSLog(@"runD 添加一个方法");
+}
+- (void)runTimeFunction
+{
+    NSLog(@" self runTimeFunction");
 }
 - (void)notificationAction
 {

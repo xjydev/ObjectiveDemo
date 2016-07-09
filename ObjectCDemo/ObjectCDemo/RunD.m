@@ -7,15 +7,16 @@
 //
 
 #import "RunD.h"
-
+#import <objc/runtime.h>
 @implementation RunD
 - (void)initWithName:(NSString *)name Age:(NSInteger)age{
     
+    
 }
 - (void)runFunc{
-    NSLog(@"runFunc1111");
+    NSLog(@"RunD runFunc1111");
 }
 - (void)runFunction{
-    NSLog(@"runFunction2222");
+    NSLog(@"RunD runFunction2222");
 }
 @end
