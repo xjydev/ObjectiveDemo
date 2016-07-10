@@ -8,6 +8,7 @@
 
 #import "MainTableViewController.h"
 #import "RunTimeViewController.h"
+#import "RunLoopViewController.h"
 #import "KvokvcViewController.h"
 #import "CycleViewController.h"
 #import "BlockViewController.h"
@@ -40,7 +41,7 @@
     _mainArray =
     @[@{@"title":@" runtime",@"class":@"RunTimeViewController"},
       @{@"title":@" Runloop",@"class":@"RounLoopViewController"},
-      @{@"title":@" CoreData",@"class":@""},
+      @{@"title":@" CoreData",@"class":@"CoredataViewController"},
       @{@"title":@" KVO/KVC",@"class":@"KvokvcViewController"},
       @{@"title":@" 生命周期",@"class":@"CycleViewController"},
       @{@"title":@" Block",@"class":@"BlockViewController"},
