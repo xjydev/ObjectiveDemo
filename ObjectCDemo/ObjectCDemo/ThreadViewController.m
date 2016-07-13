@@ -18,6 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
 //    [self lockNsthread];
     [self gcdThread];
 //    [self nsThreadFunction];

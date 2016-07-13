@@ -12,7 +12,7 @@
 #import "FirstViewController.h"
 #import "XView.h"
 #import "ThriftManger.h"
-
+#import "ObjectCDemo-Swift.h"
 @interface FirstViewController ()
 {
     
@@ -90,18 +90,7 @@
     return str;
 }
 - (IBAction)buttonAction:(id)sender {
-    
-    [[ThriftManger alloc] sendVerification];
-    
-    NSString *const st1 = @"ss";
-    //    st1 = @"s1";不可赋值
-    const NSString *st2 = @"ss2";
-    //指针的值可以修改，指向的值不可修改。
-    st2 = @"s2";
-    NSLog(@"%@==%@",st1,st2);
-    
-    //    extern const NSString *e1=@"11";不能初始化
-    
+        
     const NSString *e1 = @"e1";
     NSLog(@"%@",e1);
 
@@ -120,6 +109,56 @@
     
     const NSString *e1 = @"e1";
     NSLog(@"%@",e1);
+}
+-(NSString*)translation:(NSString *)arebic
+
+{   NSString *str = arebic;
+    NSArray *arabic_numerals = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"0"];
+    NSArray *chinese_numerals = @[@"一",@"二",@"三",@"四",@"五",@"六",@"七",@"八",@"九",@"零"];
+    NSArray *digits = @[@"个",@"十",@"百",@"千",@"万",@"十",@"百",@"千",@"亿",@"十",@"百",@"千",@"兆"];
+    NSDictionary *dictionary = [NSDictionary dictionaryWithObjects:chinese_numerals forKeys:arabic_numerals];
+    
+    NSMutableArray *sums = [NSMutableArray array];
+    for (int i = 0; i < str.length; i ++) {
+        NSString *substr = [str substringWithRange:NSMakeRange(i, 1)];
+        NSString *a = [dictionary objectForKey:substr];
+        NSString *b = digits[str.length -i-1];
+        NSString *sum = [a stringByAppendingString:b];
+        if ([a isEqualToString:chinese_numerals[9]])
+        {
+            if([b isEqualToString:digits[4]] || [b isEqualToString:digits[8]])
+            {
+                sum = b;
+                if ([[sums lastObject] isEqualToString:chinese_numerals[9]])
+                {
+                    [sums removeLastObject];
+                }
+            }else
+            {
+                sum = chinese_numerals[9];
+            }
+            
+            if ([[sums lastObject] isEqualToString:sum])
+            {
+                continue;
+            }
+        }
+        
+        [sums addObject:sum];
+    }
+    
+    NSString *sumStr = [sums  componentsJoinedByString:@""];
+    NSString *chinese = [sumStr substringToIndex:sumStr.length-1];
+    NSLog(@"%@ to %@",str,chinese);
+    return chinese;
+}
+- (IBAction)swiftDemoAction:(id)sender {
+//    SwiftUIViewController *swiftContro = [[SwiftUIViewController alloc]init];
+//    swiftContro.hidesBottomBarWhenPushed = YES;
+//    [self.navigationController pushViewController:swiftContro animated:YES];
+    UIViewController * swiftCon = [self.storyboard instantiateViewControllerWithIdentifier:@"SwiftUIViewController"];
+    [self.navigationController pushViewController:swiftCon animated:YES];
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

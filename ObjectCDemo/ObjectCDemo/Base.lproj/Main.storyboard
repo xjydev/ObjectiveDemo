@@ -359,16 +359,25 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
-                    <navigationItem key="navigationItem" title="首页" id="fru-od-3gS"/>
+                    <navigationItem key="navigationItem" title="首页" id="fru-od-3gS">
+                        <barButtonItem key="rightBarButtonItem" title="Swift" style="plain" id="S5s-CK-Xqt">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="swiftDemoAction:" destination="9pv-A4-QxB" id="DbI-0Y-ULE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="gifImageView" destination="Vps-XK-gGh" id="yUF-7l-KYp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="400" y="-982"/>
+            <point key="canvasLocation" x="485" y="-1008"/>
         </scene>
         <!--Demo-->
         <scene sceneID="tR1-Oy-Dsa">
@@ -514,6 +523,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O6V-2X-PEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-33" y="976"/>
+        </scene>
+        <!--SwiftUI View Controller-->
+        <scene sceneID="Xn6-qu-PK8">
+            <objects>
+                <viewController storyboardIdentifier="SwiftUIViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1E0-Ou-rt4" customClass="SwiftUIViewController" customModule="ObjectCDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hmf-l1-veU"/>
+                        <viewControllerLayoutGuide type="bottom" id="cDR-CL-OsV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yEx-7H-pBL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Xm-U2-Xwy">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="swiftUIcell" id="kic-Yh-cVr">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kic-Yh-cVr" id="AfJ-SM-Kln">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="1E0-Ou-rt4" id="AiB-wC-nqv"/>
+                                    <outlet property="delegate" destination="1E0-Ou-rt4" id="MJe-O5-2iN"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0Xm-U2-Xwy" firstAttribute="leading" secondItem="yEx-7H-pBL" secondAttribute="leading" id="FZR-M4-moX"/>
+                            <constraint firstItem="cDR-CL-OsV" firstAttribute="top" secondItem="0Xm-U2-Xwy" secondAttribute="bottom" id="GuL-tG-lOf"/>
+                            <constraint firstItem="0Xm-U2-Xwy" firstAttribute="top" secondItem="yEx-7H-pBL" secondAttribute="top" id="vQ1-k1-QV7"/>
+                            <constraint firstAttribute="trailing" secondItem="0Xm-U2-Xwy" secondAttribute="trailing" id="wBd-if-qhT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainTableView" destination="0Xm-U2-Xwy" id="hyS-We-ZGk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jrP-LW-MHH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-44" y="2703"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="yl2-sM-qoP">
