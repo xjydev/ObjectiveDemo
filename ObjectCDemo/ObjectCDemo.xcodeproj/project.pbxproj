@@ -320,6 +320,7 @@
 		FE11852E1CA37D680017CFEA /* ObjectCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FEF43B411D376FAC0083B8B3 /* swiftUI */,
 				FE00397A1D1138C5007294BB /* UI */,
 				FEB99B021CF86BDE007B039F /* 文字 */,
 				FE1DB0271CF292560061B5B2 /* xRefresh */,
@@ -568,6 +569,13 @@
 				FE4EB3271D2A560E0036797F /* PasteLabel.m */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		FEF43B411D376FAC0083B8B3 /* swiftUI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = swiftUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

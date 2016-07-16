@@ -110,6 +110,13 @@
     const NSString *e1 = @"e1";
     NSLog(@"%@",e1);
 }
+/**
+ * 把阿拉伯数字转换成汉字数字
+ *
+ *  @param arebic 阿拉伯数字字符串
+ *
+ *  @return 汉字数字字符串
+ */
 -(NSString*)translation:(NSString *)arebic
 
 {   NSString *str = arebic;

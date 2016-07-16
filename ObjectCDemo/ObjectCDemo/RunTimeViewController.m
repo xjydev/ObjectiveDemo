@@ -5,7 +5,9 @@
 //  Created by XiaoJingYuan on 3/24/16.
 //  Copyright © 2016 XiaoJingYuan. All rights reserved.
 //
-
+/*
+ OC采用“消息机制”，函数调用就是对象发送一条消息，oc跳过编译，在运行的时候才动态的添加函数调用，在运行的时候才决定要调用什么方法。
+ */
 #import "RunTimeViewController.h"
 #import "RunD.h"
 #import <objc/runtime.h>
