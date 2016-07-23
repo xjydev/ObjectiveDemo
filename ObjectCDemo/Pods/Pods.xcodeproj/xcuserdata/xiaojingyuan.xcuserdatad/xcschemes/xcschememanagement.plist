@@ -44,6 +44,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SVPullToRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>YYKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,22 +62,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0B3371323EF369DEFDA812C3317CA745</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>250BC89212E192DBC0059ABC66A81633</key>
+		<key>65DF3EC1F6FD9B10B6420B50E86E47B0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>41E319EC16AF3077EC09D16814392938</key>
+		<key>7EEB1F7313E61684912D08742C0B437B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>842185CD9B7D63E65588C839DA88D5AA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,12 +87,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>93A1A1710542302836E7CA821B4AAF0E</key>
+		<key>9F027E48D663E06BA5A038E2D0F51286</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>97E10B0E9D79DAA160F34C4E9CA54424</key>
+		<key>A3E5C0284DD1565C6AFD3B8ED817827A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -97,7 +102,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D7DC901E70DA411122E449B5F76BB81C</key>
+		<key>B9A6B6570C8DD3DFEEEEFCB61BDC233E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C76FE87F38E544C421E508A979942A45</key>
 		<dict>
 			<key>primary</key>
 			<true/>

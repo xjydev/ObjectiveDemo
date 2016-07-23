@@ -16,9 +16,12 @@
 #import "ThreadViewController.h"
 #import "AlgorithmViewController.h"
 #import "ImageTextViewController.h"
+
+#import "SVPullToRefresh.h"
 @interface MainTableViewController ()
 {
     NSArray    *_mainArray;
+    UIRefreshControl *_refresh;
 }
 @end
 
@@ -52,11 +55,25 @@
     float a = 3.15;
     self.tableView.rowHeight = 60;
     NSLog(@"%.1f===%0.1f",a,a);
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    _refresh = [[UIRefreshControl alloc]init];
+    [_refresh addTarget:self action:@selector(refreshAction) forControlEvents:UIControlEventValueChanged];
+    [self.tableView addSubview:_refresh];
+//    [self.tableView addPullToRefreshWithActionHandler:^{
+//        
+//    }];
+//    [self.tableView addInfiniteScrollingWithActionHandler:^{
+//        
+//    }];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+- (void)refreshAction
+{
+    NSLog(@"main------refresh----");
+    [self performSelector:@selector(endAction ) withObject:nil afterDelay:4];
+}
+- (void)endAction
+{
+    [_refresh endRefreshing];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

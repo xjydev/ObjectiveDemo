@@ -7,7 +7,7 @@
 //
 
 #import "SecondViewController.h"
-
+#import "xRefresh.h"
 @interface SecondViewController ()
 
 @end
@@ -16,7 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    UITableView *table = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, 200, 400) style:UITableViewStylePlain];
+    
+    [self.view addSubview:table];
+    [table addPullDownRefreshViewAutomaticallyAdjustsScrollView:nil Block:^(void) {
+        
+    }];
+    [table removeFromSuperview];
 }
 
 - (void)didReceiveMemoryWarning {

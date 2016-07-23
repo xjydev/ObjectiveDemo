@@ -29,6 +29,7 @@ PODS:
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
+  - SVPullToRefresh (0.4.1)
   - thrift (0.9.3)
   - YYKit (1.0.5):
     - YYKit/no-arc (= 1.0.5)
@@ -42,6 +43,7 @@ DEPENDENCIES:
   - ReactiveCocoa
   - ReactiveViewModel
   - SDWebImage
+  - SVPullToRefresh
   - thrift (~> 0.9.3)
   - YYKit (= 1.0.5)
 
@@ -53,9 +55,10 @@ SPEC CHECKSUMS:
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   ReactiveViewModel: 58918dcbcec2d3151195ab1ed9163c57a8163999
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
   thrift: 206849d78773b19e1be3cc1bbe094371c0adfbe2
   YYKit: f2654fe525de2283648db957bddb37ddd8e06549
 
-PODFILE CHECKSUM: 3f6425503ad41bc3677be04422af1c33f3b30c80
+PODFILE CHECKSUM: 5a95ec63afc7b8c54d6be212c90fa8b423677ad5
 
-COCOAPODS: 1.0.0.beta.8
+COCOAPODS: 1.0.1

@@ -5,7 +5,10 @@
 //  Created by XiaoJingYuan on 3/24/16.
 //  Copyright © 2016 XiaoJingYuan. All rights reserved.
 //
-
+/*
+ oc是动态运行时语言
+ 
+ */
 #import "AppDelegate.h"
 
 @interface AppDelegate ()

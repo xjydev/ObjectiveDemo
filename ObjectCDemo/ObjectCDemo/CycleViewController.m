@@ -25,6 +25,18 @@
     NSLog(@"生命周期-Didload");
     self.title = @"生命周期";
     self.view.backgroundColor = [UIColor whiteColor];
+    NSMutableArray *array = [NSMutableArray arrayWithCapacity:100];
+    for (int i = 0 ; i<100; i++) {
+        NSString *str = [NSString stringWithFormat:@"%@",@(i)];
+        [array addObject:str];
+    }
+    NSLog(@"1=%@",array);
+    NSMutableArray *arr = [NSMutableArray arrayWithCapacity:0];
+    for (int i = 0 ; i<100; i++) {
+        NSString *str = [NSString stringWithFormat:@"%@",@(i)];
+        [arr addObject:str];
+    }
+    NSLog(@"2=%@",arr);
 //    传递链：由系统向离用户最近的view传递。UIKit –> active app’s event queue –> window –> root view –>……–>lowest view
 //    响应链：由离用户最近的view向系统传递。initial view –> super view –> …..–> view controller –> window –> Application
     // Do any additional setup after loading the view.

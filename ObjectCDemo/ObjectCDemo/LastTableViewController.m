@@ -8,10 +8,12 @@
 /**
  *  iOS自带控件的研究
  *
- *  @return <#return value description#>
+ *  @return return value description
  */
 #import "LastTableViewController.h"
 #import "XWindow.h"
+#import "xRefresh.h"
+
 @interface LastTableViewController ()
 {
     NSArray    *_lastArray;
@@ -24,6 +26,7 @@
     [super viewDidLoad];
      self.title = @"控件";
     
+    [self setAutomaticallyAdjustsScrollViewInsets:YES];
     _lastArray =
     @[@{@"title":@"UIWindow",@"class":@""},
       @{@"title":@"UITableView",@"class":@""},
@@ -39,11 +42,16 @@
       @{@"title":@"UISegmented",@"class":@""},
       @{@"title":@"UITextField",@"class":@""},
       @{@"title":@"UITextView",@"class":@""},];
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.tableView.rowHeight = 80;
+    [self.tableView addPullDownRefreshViewAutomaticallyAdjustsScrollView:self.automaticallyAdjustsScrollViewInsets Block:^(void) {
+        NSLog(@"   refresh");
+    }];
+    [self.tableView addPullUpRefreshView:^(void) {
+        NSLog(@"   increase");
+    }];
+     NSLog(@"==%f==%f==%f",self.tableView.contentOffset.y,self.tableView.contentInset.top,self.tableView.bounds.origin.y);
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -84,7 +92,14 @@
             break;
     }
 }
-
+- (void)viewDidAppear:(BOOL)animated
+{
+    NSLog(@"11==%f==%f",self.tableView.bounds.origin.y,self.tableView.superview.bounds.origin.y);
+}
+- (void)viewWillAppear:(BOOL)animated
+{
+    NSLog(@"22==%f",self.tableView.bounds.origin.y);
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
