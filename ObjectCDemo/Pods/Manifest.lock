@@ -14,9 +14,22 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - AsyncDisplayKit (1.9.81):
+    - AsyncDisplayKit/PINRemoteImage (= 1.9.81)
+  - AsyncDisplayKit/ASDealloc2MainObject (1.9.81)
+  - AsyncDisplayKit/Core (1.9.81):
+    - AsyncDisplayKit/ASDealloc2MainObject
+  - AsyncDisplayKit/PINRemoteImage (1.9.81):
+    - AsyncDisplayKit/Core
+    - PINRemoteImage/iOS (>= 3.0.0-beta.2)
   - DateTools (1.7.0)
   - MBProgressHUD (0.9.2)
   - NSData+Base64 (1.0.0)
+  - PINCache (2.3)
+  - PINRemoteImage/Core (3.0.0-beta.2):
+    - PINCache (>= 2.1)
+  - PINRemoteImage/iOS (3.0.0-beta.2):
+    - PINRemoteImage/Core
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -31,12 +44,14 @@ PODS:
   - SDWebImage/Core (3.7.5)
   - SVPullToRefresh (0.4.1)
   - thrift (0.9.3)
+  - XRefresh (1.1.0)
   - YYKit (1.0.5):
     - YYKit/no-arc (= 1.0.5)
   - YYKit/no-arc (1.0.5)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - AsyncDisplayKit
   - DateTools
   - MBProgressHUD (~> 0.9.1)
   - NSData+Base64 (~> 1.0.0)
@@ -45,20 +60,25 @@ DEPENDENCIES:
   - SDWebImage
   - SVPullToRefresh
   - thrift (~> 0.9.3)
+  - XRefresh
   - YYKit (= 1.0.5)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AsyncDisplayKit: 011ea22a76a79a5bbfc14501fede6e0196a3c2f0
   DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   NSData+Base64: 4e84902c4db907a15673474677e57763ef3903e4
+  PINCache: ce36ed282031b92fc7733ffe831f474ff80fddc2
+  PINRemoteImage: 197554c5ba57a6ae90f5db441651180039fc9062
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   ReactiveViewModel: 58918dcbcec2d3151195ab1ed9163c57a8163999
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
   thrift: 206849d78773b19e1be3cc1bbe094371c0adfbe2
+  XRefresh: a7be7b07fc7aa921f1d1d6bcd6fa33c3614b2084
   YYKit: f2654fe525de2283648db957bddb37ddd8e06549
 
-PODFILE CHECKSUM: 5a95ec63afc7b8c54d6be212c90fa8b423677ad5
+PODFILE CHECKSUM: c86f18259f3a3073af98f6e8252de61b16227614
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.0.beta.1

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0CCF82FC9B402F5ED9FD397EBE888FFD2275B5B6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0CCF82FC9B402F5ED9FD397EBE888FFD2275B5B6" : 0,
+    "D30799FD3BB16720462B1202D89133266CA22D4A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "84EF7ABC-546A-473E-99A9-B8FA14B64E63",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0CCF82FC9B402F5ED9FD397EBE888FFD2275B5B6" : "ObjectiveDemo\/",
+    "D30799FD3BB16720462B1202D89133266CA22D4A" : "..\/Git\/ipad_psr"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ObjectCDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ObjectCDemo\/ObjectCDemo.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/xjydev\/ObjectiveDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0CCF82FC9B402F5ED9FD397EBE888FFD2275B5B6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/git.duocai.cn\/root\/ipad_psr.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D30799FD3BB16720462B1202D89133266CA22D4A"
+    }
+  ]
+}

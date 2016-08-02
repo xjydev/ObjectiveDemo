@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AsyncDisplayKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>DateTools.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -20,6 +25,16 @@
 			<false/>
 		</dict>
 		<key>NSData+Base64.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PINCache.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PINRemoteImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -49,6 +64,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>XRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>YYKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -62,22 +82,47 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>175C53875D968DEBA8107E9B1FB7409C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>65DF3EC1F6FD9B10B6420B50E86E47B0</key>
+		<key>2B840F1C281A84A532BDBE2073A0B4D0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7EEB1F7313E61684912D08742C0B437B</key>
+		<key>2D198BBA60DB3871705CB228F29C79C3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>842185CD9B7D63E65588C839DA88D5AA</key>
+		<key>4743041EBF934949D8C035D335D79CF6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5F55189113AE45EC7C421A050A369FF1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5F7D68FE8044B38F8E863140F287EE75</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6CA148615D72CEB635698BBBBACAB350</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>81CF0B648FD0A2E1F69ACD3587A55B83</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,12 +132,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9F027E48D663E06BA5A038E2D0F51286</key>
+		<key>8910390D8E20CBA74DDD953EFF0ED904</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A3E5C0284DD1565C6AFD3B8ED817827A</key>
+		<key>AE1BD1B7DD1A46F90EDD516F9583BC0C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -102,12 +147,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B9A6B6570C8DD3DFEEEEFCB61BDC233E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C76FE87F38E544C421E508A979942A45</key>
+		<key>C901BFF2B76D5462EA2340DB6791A674</key>
 		<dict>
 			<key>primary</key>
 			<true/>

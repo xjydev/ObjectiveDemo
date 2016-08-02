@@ -25,7 +25,6 @@
 		FE1185751CA37F300017CFEA /* RunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1185741CA37F300017CFEA /* RunTimeViewController.m */; };
 		FE1185801CA3CABD0017CFEA /* XWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FE11857F1CA3CABD0017CFEA /* XWindow.m */; };
 		FE17AC701D13E75A00CD3AA5 /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE17AC6F1D13E75A00CD3AA5 /* RunLoopViewController.m */; };
-		FE1DB0301CF2A1560061B5B2 /* xRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1DB02F1CF2A1560061B5B2 /* xRefresh.m */; };
 		FE1EB7C71CC384F800D40400 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE1EB7C51CC384F800D40400 /* Interface.storyboard */; };
 		FE1EB7C91CC384F800D40400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE1EB7C81CC384F800D40400 /* Assets.xcassets */; };
 		FE1EB7D01CC384F800D40400 /* ObjectWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FE1EB7CF1CC384F800D40400 /* ObjectWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -147,8 +146,6 @@
 		FE11857F1CA3CABD0017CFEA /* XWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWindow.m; sourceTree = "<group>"; };
 		FE17AC6E1D13E75A00CD3AA5 /* RunLoopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunLoopViewController.h; sourceTree = "<group>"; };
 		FE17AC6F1D13E75A00CD3AA5 /* RunLoopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunLoopViewController.m; sourceTree = "<group>"; };
-		FE1DB02E1CF2A1560061B5B2 /* xRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xRefresh.h; sourceTree = "<group>"; };
-		FE1DB02F1CF2A1560061B5B2 /* xRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xRefresh.m; sourceTree = "<group>"; };
 		FE1EB7C31CC384F800D40400 /* ObjectWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE1EB7C61CC384F800D40400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		FE1EB7C81CC384F800D40400 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -323,7 +320,6 @@
 				FEF43B411D376FAC0083B8B3 /* swiftUI */,
 				FE00397A1D1138C5007294BB /* UI */,
 				FEB99B021CF86BDE007B039F /* 文字 */,
-				FE1DB0271CF292560061B5B2 /* xRefresh */,
 				FE288EDA1CE2E98B008330E3 /* Thrift */,
 				FEEA49B51CC66A930093ADBF /* grammar */,
 				FE1185321CA37D680017CFEA /* AppDelegate.h */,
@@ -402,15 +398,6 @@
 				FE17AC6F1D13E75A00CD3AA5 /* RunLoopViewController.m */,
 			);
 			name = Runloop;
-			sourceTree = "<group>";
-		};
-		FE1DB0271CF292560061B5B2 /* xRefresh */ = {
-			isa = PBXGroup;
-			children = (
-				FE1DB02E1CF2A1560061B5B2 /* xRefresh.h */,
-				FE1DB02F1CF2A1560061B5B2 /* xRefresh.m */,
-			);
-			path = xRefresh;
 			sourceTree = "<group>";
 		};
 		FE1EB7C41CC384F800D40400 /* ObjectWatch */ = {
@@ -784,7 +771,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		6911625C4C19753B7135A058 /* [CP] Embed Pods Frameworks */ = {
@@ -830,7 +817,6 @@
 				FEC09DD31CCA687B00C320FC /* CycleViewController.m in Sources */,
 				FE4EB3281D2A560E0036797F /* PasteLabel.m in Sources */,
 				FE3490671D36422B001FC58C /* SwiftUIViewController.swift in Sources */,
-				FE1DB0301CF2A1560061B5B2 /* xRefresh.m in Sources */,
 				FE1185721CA37EB40017CFEA /* LastTableViewController.m in Sources */,
 				FEB99B051CF86BF6007B039F /* TextViewController.m in Sources */,
 				FEC09DD71CCB24F700C320FC /* BlockViewController.m in Sources */,
@@ -1020,6 +1006,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ObjectCDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chuangdianke.ObjectCDemo;
@@ -1035,6 +1022,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				INFOPLIST_FILE = ObjectCDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chuangdianke.ObjectCDemo;
