@@ -13,6 +13,7 @@
 #import "XView.h"
 #import "ThriftManger.h"
 #import "ObjectCDemo-Swift.h"
+#import <AssetsLibrary/AssetsLibrary.h>
 @interface FirstViewController ()
 {
     
@@ -84,6 +85,14 @@
     [self.gifImageView setImage:[UIImage imageNamed:@"刷新静态"]];
 //    self.gifImageView.animating = YES;
     
+    
+//    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(100, 100, 29, 29)];
+//    NSDictionary *info = [[NSBundle mainBundle]infoDictionary];
+//    NSString *ico = [info valueForKey:@"CFBundleIcons.CFBundlePrimaryIcon.CFBundleIconFiles"];
+//    NSString *path =[[NSBundle mainBundle]pathForResource:@"AppIcon" ofType:@"png"];
+//    imageView.backgroundColor = [UIColor yellowColor];
+//    [imageView setImage:[UIImage imageWithContentsOfFile:path]];
+//    [self.view addSubview:imageView];
 }
 - (NSString *)getUnitTestString:(NSString *)str
 {

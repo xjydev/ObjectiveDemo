@@ -7,18 +7,30 @@
 //
 
 #import "CoredataViewController.h"
-
+#import "XManageCoreData.h"
 @interface CoredataViewController ()
-
+{
+    NSManagedObjectContext *_context;
+}
 @end
 
 @implementation CoredataViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
-
+- (IBAction)search:(id)sender {
+  NSArray *arr = [[XManageCoreData manageCoreData]searchSortDescriptors:@{@"age":@"1"} forEntityName:@"Person" searchContext:@""];
+    NSLog(@"===%@",arr);
+//     saveObjectsDict:@{@"age":@"1"} forEntityName:@"Person" searchContext:@""];
+}
+- (IBAction)save:(id)sender {
+    [[XManageCoreData manageCoreData] saveObjectsDict:@{@"name":@"jike1",@"age":[NSNumber numberWithInt:10]} forEntityName:@"Person"];
+}
+- (IBAction)dele:(id)sender {
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

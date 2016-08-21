@@ -16,8 +16,7 @@
 @end
 
 @implementation RunTimeViewController
-- (void)dealloc
-{
+- (void)dealloc {
     
 }
 - (void)viewDidLoad {
@@ -114,24 +113,20 @@
     [self performSelector:@selector(doSomething)];
 }
 //(id self,SEL _cmd)两个参数是必须有的
-void runAdd(id self,SEL_cmd)
-{
+void runAdd(id self,SEL_cmd){
     NSLog(@"runD 添加一个方法");
 }
-- (void)runTimeFunction
-{
+- (void)runTimeFunction {
     NSLog(@" self runTimeFunction");
 }
-- (void)notificationAction
-{
+- (void)notificationAction {
     
 }
 int cfunction(id self, SEL _cmd, NSString *str) {
     NSLog(@"%@", str);
     return 10;//随便返回个值
 }
-+ (BOOL)resolveInstanceMethod:(SEL)sel
-{
++ (BOOL)resolveInstanceMethod:(SEL)sel {
     if (sel == @selector(doSomething)) {
         NSLog(@"add method here");
         class_addMethod([self class], sel, (IMP)dynamicMethodIMP, "v@:");
@@ -139,8 +134,7 @@ int cfunction(id self, SEL _cmd, NSString *str) {
     }
     return [super resolveInstanceMethod:sel];
 }
-void dynamicMethodIMP(id self,SEL_cmd)
-{
+void dynamicMethodIMP(id self,SEL_cmd) {
     NSLog(@"doSomething SEL");
 }
 - (void)didReceiveMemoryWarning {

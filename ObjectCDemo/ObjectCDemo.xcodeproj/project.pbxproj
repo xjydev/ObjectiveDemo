@@ -10,6 +10,8 @@
 		9A2243D74E8BCDF649C5F454 /* Pods_ObjectCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E3E053ACC7BC101A8C1D8D /* Pods_ObjectCDemo.framework */; };
 		FE0039751D1123AB007294BB /* AlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0039741D1123AB007294BB /* AlgorithmViewController.m */; };
 		FE0039791D11274B007294BB /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0039781D11274B007294BB /* ThreadViewController.m */; };
+		FE00A8AC1D5422C8008FEB3F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE00A8AB1D5422C8008FEB3F /* CoreText.framework */; };
+		FE00A8AF1D544C4B008FEB3F /* XTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = FE00A8AE1D544C4B008FEB3F /* XTextAttachment.m */; };
 		FE0E2A961D06AF6400F49470 /* ImageTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0E2A951D06AF6400F49470 /* ImageTextViewController.m */; };
 		FE1185311CA37D680017CFEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1185301CA37D680017CFEA /* main.m */; };
 		FE1185341CA37D680017CFEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1185331CA37D680017CFEA /* AppDelegate.m */; };
@@ -41,9 +43,16 @@
 		FE3490671D36422B001FC58C /* SwiftUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3490661D36422B001FC58C /* SwiftUIViewController.swift */; };
 		FE4EB3281D2A560E0036797F /* PasteLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4EB3271D2A560E0036797F /* PasteLabel.m */; };
 		FE58F5A41CB3B6120045C324 /* RunD.m in Sources */ = {isa = PBXBuildFile; fileRef = FE58F5A31CB3B6120045C324 /* RunD.m */; };
+		FE5D30611D53438200E7C44F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE5D30601D53438200E7C44F /* CoreData.framework */; };
+		FE5D30641D5343E700E7C44F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE5D30621D5343E700E7C44F /* Model.xcdatamodeld */; };
 		FEB99B051CF86BF6007B039F /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB99B041CF86BF6007B039F /* TextViewController.m */; };
 		FEC09DD31CCA687B00C320FC /* CycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC09DD21CCA687B00C320FC /* CycleViewController.m */; };
 		FEC09DD71CCB24F700C320FC /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC09DD61CCB24F700C320FC /* BlockViewController.m */; };
+		FEC0F85F1D5837F700B15A78 /* Car+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC0F8581D5837F700B15A78 /* Car+CoreDataProperties.m */; };
+		FEC0F8601D5837F700B15A78 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC0F85A1D5837F700B15A78 /* Car.m */; };
+		FEC0F8611D5837F700B15A78 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC0F85C1D5837F700B15A78 /* Person+CoreDataProperties.m */; };
+		FEC0F8621D5837F700B15A78 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC0F85E1D5837F700B15A78 /* Person.m */; };
+		FEC0F8681D58546B00B15A78 /* XManageCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC0F8671D58546B00B15A78 /* XManageCoreData.m */; };
 		FEC761911D2CA70400EEF994 /* GIFImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC761901D2CA70400EEF994 /* GIFImageView.m */; };
 		FEEA49BA1CC66B040093ADBF /* KvokvcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEA49B81CC66B040093ADBF /* KvokvcViewController.m */; };
 		FEEA49BB1CC66B040093ADBF /* KvokvcViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEEA49B91CC66B040093ADBF /* KvokvcViewController.xib */; };
@@ -116,6 +125,9 @@
 		FE0039741D1123AB007294BB /* AlgorithmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlgorithmViewController.m; sourceTree = "<group>"; };
 		FE0039771D11274B007294BB /* ThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
 		FE0039781D11274B007294BB /* ThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
+		FE00A8AB1D5422C8008FEB3F /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		FE00A8AD1D544C4B008FEB3F /* XTextAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTextAttachment.h; sourceTree = "<group>"; };
+		FE00A8AE1D544C4B008FEB3F /* XTextAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTextAttachment.m; sourceTree = "<group>"; };
 		FE0E2A941D06AF6400F49470 /* ImageTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTextViewController.h; sourceTree = "<group>"; };
 		FE0E2A951D06AF6400F49470 /* ImageTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTextViewController.m; sourceTree = "<group>"; };
 		FE11852C1CA37D680017CFEA /* ObjectCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,12 +187,24 @@
 		FE4EB3271D2A560E0036797F /* PasteLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasteLabel.m; sourceTree = "<group>"; };
 		FE58F5A21CB3B6120045C324 /* RunD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunD.h; sourceTree = "<group>"; };
 		FE58F5A31CB3B6120045C324 /* RunD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunD.m; sourceTree = "<group>"; };
+		FE5D30601D53438200E7C44F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FE5D30631D5343E700E7C44F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		FEB99B031CF86BF6007B039F /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
 		FEB99B041CF86BF6007B039F /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
 		FEC09DD11CCA687B00C320FC /* CycleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleViewController.h; sourceTree = "<group>"; };
 		FEC09DD21CCA687B00C320FC /* CycleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleViewController.m; sourceTree = "<group>"; };
 		FEC09DD51CCB24F700C320FC /* BlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockViewController.h; sourceTree = "<group>"; };
 		FEC09DD61CCB24F700C320FC /* BlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockViewController.m; sourceTree = "<group>"; };
+		FEC0F8571D5837F700B15A78 /* Car+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Car+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FEC0F8581D5837F700B15A78 /* Car+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Car+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FEC0F8591D5837F700B15A78 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		FEC0F85A1D5837F700B15A78 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		FEC0F85B1D5837F700B15A78 /* Person+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FEC0F85C1D5837F700B15A78 /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FEC0F85D1D5837F700B15A78 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		FEC0F85E1D5837F700B15A78 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		FEC0F8661D58546B00B15A78 /* XManageCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XManageCoreData.h; sourceTree = "<group>"; };
+		FEC0F8671D58546B00B15A78 /* XManageCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XManageCoreData.m; sourceTree = "<group>"; };
 		FEC7618F1D2CA70400EEF994 /* GIFImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFImageView.h; sourceTree = "<group>"; };
 		FEC761901D2CA70400EEF994 /* GIFImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFImageView.m; sourceTree = "<group>"; };
 		FEEA49B71CC66B040093ADBF /* KvokvcViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KvokvcViewController.h; sourceTree = "<group>"; };
@@ -206,6 +230,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE00A8AC1D5422C8008FEB3F /* CoreText.framework in Frameworks */,
+				FE5D30611D53438200E7C44F /* CoreData.framework in Frameworks */,
 				9A2243D74E8BCDF649C5F454 /* Pods_ObjectCDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,6 +263,8 @@
 		13FAE18B031BA8ED14F8E1FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FE00A8AB1D5422C8008FEB3F /* CoreText.framework */,
+				FE5D30601D53438200E7C44F /* CoreData.framework */,
 				93E3E053ACC7BC101A8C1D8D /* Pods_ObjectCDemo.framework */,
 			);
 			name = Frameworks;
@@ -284,6 +312,8 @@
 			children = (
 				FE0E2A941D06AF6400F49470 /* ImageTextViewController.h */,
 				FE0E2A951D06AF6400F49470 /* ImageTextViewController.m */,
+				FE00A8AD1D544C4B008FEB3F /* XTextAttachment.h */,
+				FE00A8AE1D544C4B008FEB3F /* XTextAttachment.m */,
 			);
 			name = "图文";
 			sourceTree = "<group>";
@@ -291,6 +321,7 @@
 		FE1185231CA37D680017CFEA = {
 			isa = PBXGroup;
 			children = (
+				FE5D30621D5343E700E7C44F /* Model.xcdatamodeld */,
 				FE11852E1CA37D680017CFEA /* ObjectCDemo */,
 				FE11854B1CA37D680017CFEA /* ObjectCDemoTests */,
 				FE1185561CA37D680017CFEA /* ObjectCDemoUITests */,
@@ -448,6 +479,16 @@
 			children = (
 				FE2142481D2123E200FF2FA8 /* CoredataViewController.h */,
 				FE2142491D2123E200FF2FA8 /* CoredataViewController.m */,
+				FEC0F8661D58546B00B15A78 /* XManageCoreData.h */,
+				FEC0F8671D58546B00B15A78 /* XManageCoreData.m */,
+				FEC0F8571D5837F700B15A78 /* Car+CoreDataProperties.h */,
+				FEC0F8581D5837F700B15A78 /* Car+CoreDataProperties.m */,
+				FEC0F8591D5837F700B15A78 /* Car.h */,
+				FEC0F85A1D5837F700B15A78 /* Car.m */,
+				FEC0F85B1D5837F700B15A78 /* Person+CoreDataProperties.h */,
+				FEC0F85C1D5837F700B15A78 /* Person+CoreDataProperties.m */,
+				FEC0F85D1D5837F700B15A78 /* Person.h */,
+				FEC0F85E1D5837F700B15A78 /* Person.m */,
 			);
 			name = Coredata;
 			sourceTree = "<group>";
@@ -814,22 +855,29 @@
 				FE11853A1CA37D680017CFEA /* SecondViewController.m in Sources */,
 				FE58F5A41CB3B6120045C324 /* RunD.m in Sources */,
 				FEEB27EE1CE0798C00E79568 /* UIDatePickerViewController.m in Sources */,
+				FE5D30641D5343E700E7C44F /* Model.xcdatamodeld in Sources */,
 				FEC09DD31CCA687B00C320FC /* CycleViewController.m in Sources */,
 				FE4EB3281D2A560E0036797F /* PasteLabel.m in Sources */,
+				FEC0F8681D58546B00B15A78 /* XManageCoreData.m in Sources */,
+				FEC0F85F1D5837F700B15A78 /* Car+CoreDataProperties.m in Sources */,
 				FE3490671D36422B001FC58C /* SwiftUIViewController.swift in Sources */,
+				FEC0F8611D5837F700B15A78 /* Person+CoreDataProperties.m in Sources */,
 				FE1185721CA37EB40017CFEA /* LastTableViewController.m in Sources */,
+				FE00A8AF1D544C4B008FEB3F /* XTextAttachment.m in Sources */,
 				FEB99B051CF86BF6007B039F /* TextViewController.m in Sources */,
 				FEC09DD71CCB24F700C320FC /* BlockViewController.m in Sources */,
 				FEFA76391CF01D28004CF2C3 /* API.m in Sources */,
 				FE1185341CA37D680017CFEA /* AppDelegate.m in Sources */,
 				FE17AC701D13E75A00CD3AA5 /* RunLoopViewController.m in Sources */,
 				FE11856E1CA37E6F0017CFEA /* MainTableViewController.m in Sources */,
+				FEC0F8601D5837F700B15A78 /* Car.m in Sources */,
 				FE1EB7EF1CC497EC00D40400 /* XTabBarViewController.m in Sources */,
 				FE288EE31CE2EA07008330E3 /* ThriftManger.m in Sources */,
 				FE1185801CA3CABD0017CFEA /* XWindow.m in Sources */,
 				FE1185751CA37F300017CFEA /* RunTimeViewController.m in Sources */,
 				FE1185371CA37D680017CFEA /* FirstViewController.m in Sources */,
 				FEEA49BF1CC861B90093ADBF /* XView.m in Sources */,
+				FEC0F8621D5837F700B15A78 /* Person.m in Sources */,
 				FEEA49BA1CC66B040093ADBF /* KvokvcViewController.m in Sources */,
 				FE1185311CA37D680017CFEA /* main.m in Sources */,
 				FE1F8AAE1D28D674000F8373 /* RCDemoViewController.m in Sources */,
@@ -1199,6 +1247,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FE5D30621D5343E700E7C44F /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FE5D30631D5343E700E7C44F /* Model.xcdatamodel */,
+			);
+			currentVersion = FE5D30631D5343E700E7C44F /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FE1185241CA37D680017CFEA /* Project object */;
 }
