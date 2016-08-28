@@ -19,7 +19,11 @@
    
     [pasteLabel addPaste];
     
+    [RACObserve(self, pro)subscribeNext:^(id x) {
+        
+    }];
     
+   
 }
 
 - (void)didReceiveMemoryWarning {

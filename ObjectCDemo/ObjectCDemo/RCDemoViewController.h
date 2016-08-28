@@ -13,4 +13,5 @@
     
     __weak IBOutlet PasteLabel *pasteLabel;
 }
+@property (nonatomic, copy)NSString *pro;
 @end
