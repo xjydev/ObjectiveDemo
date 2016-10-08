@@ -16,6 +16,8 @@
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction:)];
     [self addGestureRecognizer:tap];
 }
+
+
 - (void)setXAnimating:(BOOL)xAnimating
 {
     _xAnimating = xAnimating;
@@ -32,9 +34,10 @@
             [self.timer invalidate];
             self.timer = nil;
         }
-        
     }
 }
+
+
 - (void)roundCycle
 {
     _currentImageIndex ++;
