@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C9949731D9E5AE1000494C3 /* LastTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9949721D9E5AE1000494C3 /* LastTableViewController.m */; };
+		6C99497D1D9E5B6C000494C3 /* XView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C99497C1D9E5B6C000494C3 /* XView.m */; };
+		6CA2E0461D9D0F7F009C5BBE /* GIFImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA2E0451D9D0F7F009C5BBE /* GIFImageView.m */; };
 		9A2243D74E8BCDF649C5F454 /* Pods_ObjectCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E3E053ACC7BC101A8C1D8D /* Pods_ObjectCDemo.framework */; };
 		FE0039751D1123AB007294BB /* AlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0039741D1123AB007294BB /* AlgorithmViewController.m */; };
 		FE0039791D11274B007294BB /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0039781D11274B007294BB /* ThreadViewController.m */; };
@@ -23,7 +26,6 @@
 		FE11854D1CA37D680017CFEA /* ObjectCDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE11854C1CA37D680017CFEA /* ObjectCDemoTests.m */; };
 		FE1185581CA37D680017CFEA /* ObjectCDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1185571CA37D680017CFEA /* ObjectCDemoUITests.m */; };
 		FE11856E1CA37E6F0017CFEA /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE11856C1CA37E6F0017CFEA /* MainTableViewController.m */; };
-		FE1185721CA37EB40017CFEA /* LastTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1185711CA37EB40017CFEA /* LastTableViewController.m */; };
 		FE1185751CA37F300017CFEA /* RunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1185741CA37F300017CFEA /* RunTimeViewController.m */; };
 		FE1185801CA3CABD0017CFEA /* XWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FE11857F1CA3CABD0017CFEA /* XWindow.m */; };
 		FE17AC701D13E75A00CD3AA5 /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE17AC6F1D13E75A00CD3AA5 /* RunLoopViewController.m */; };
@@ -53,10 +55,8 @@
 		FEC0F8611D5837F700B15A78 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC0F85C1D5837F700B15A78 /* Person+CoreDataProperties.m */; };
 		FEC0F8621D5837F700B15A78 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC0F85E1D5837F700B15A78 /* Person.m */; };
 		FEC0F8681D58546B00B15A78 /* XManageCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC0F8671D58546B00B15A78 /* XManageCoreData.m */; };
-		FEC761911D2CA70400EEF994 /* GIFImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC761901D2CA70400EEF994 /* GIFImageView.m */; };
 		FEEA49BA1CC66B040093ADBF /* KvokvcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEA49B81CC66B040093ADBF /* KvokvcViewController.m */; };
 		FEEA49BB1CC66B040093ADBF /* KvokvcViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEEA49B91CC66B040093ADBF /* KvokvcViewController.xib */; };
-		FEEA49BF1CC861B90093ADBF /* XView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEA49BE1CC861B90093ADBF /* XView.m */; };
 		FEEB27EE1CE0798C00E79568 /* UIDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEB27ED1CE0798C00E79568 /* UIDatePickerViewController.m */; };
 		FEFA76391CF01D28004CF2C3 /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFA76381CF01D28004CF2C3 /* API.m */; };
 /* End PBXBuildFile section */
@@ -118,6 +118,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6C9949711D9E5AE1000494C3 /* LastTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LastTableViewController.h; path = ObjectCDemo/LastTableViewController.h; sourceTree = SOURCE_ROOT; };
+		6C9949721D9E5AE1000494C3 /* LastTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LastTableViewController.m; path = ObjectCDemo/LastTableViewController.m; sourceTree = SOURCE_ROOT; };
+		6C99497B1D9E5B6C000494C3 /* XView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XView.h; path = ObjectCDemo/XView.h; sourceTree = SOURCE_ROOT; };
+		6C99497C1D9E5B6C000494C3 /* XView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XView.m; path = ObjectCDemo/XView.m; sourceTree = SOURCE_ROOT; };
+		6CA2E0441D9D0F7F009C5BBE /* GIFImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GIFImageView.h; path = ObjectCDemo/UI/GIFImageView.h; sourceTree = SOURCE_ROOT; };
+		6CA2E0451D9D0F7F009C5BBE /* GIFImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GIFImageView.m; path = ObjectCDemo/UI/GIFImageView.m; sourceTree = SOURCE_ROOT; };
 		93E3E053ACC7BC101A8C1D8D /* Pods_ObjectCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE176A33EA281EB4DCD5D88 /* Pods-ObjectCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectCDemo/Pods-ObjectCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F25C032C8AA32DEC50BEB247 /* Pods-ObjectCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectCDemo/Pods-ObjectCDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -150,8 +156,6 @@
 		FE1185591CA37D680017CFEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE11856B1CA37E6F0017CFEA /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
 		FE11856C1CA37E6F0017CFEA /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
-		FE1185701CA37EB40017CFEA /* LastTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LastTableViewController.h; sourceTree = "<group>"; };
-		FE1185711CA37EB40017CFEA /* LastTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LastTableViewController.m; sourceTree = "<group>"; };
 		FE1185731CA37F300017CFEA /* RunTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunTimeViewController.h; sourceTree = "<group>"; };
 		FE1185741CA37F300017CFEA /* RunTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeViewController.m; sourceTree = "<group>"; };
 		FE11857E1CA3CABD0017CFEA /* XWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWindow.h; sourceTree = "<group>"; };
@@ -183,8 +187,8 @@
 		FE288EE21CE2EA07008330E3 /* ThriftManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThriftManger.m; sourceTree = "<group>"; };
 		FE3490631D363D87001FC58C /* ObjectCDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjectCDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		FE3490661D36422B001FC58C /* SwiftUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIViewController.swift; sourceTree = "<group>"; };
-		FE4EB3261D2A560E0036797F /* PasteLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasteLabel.h; sourceTree = "<group>"; };
-		FE4EB3271D2A560E0036797F /* PasteLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasteLabel.m; sourceTree = "<group>"; };
+		FE4EB3261D2A560E0036797F /* PasteLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PasteLabel.h; path = ../../../../GitHub/ObjectiveDemo/ObjectCDemo/ObjectCDemo/UI/PasteLabel.h; sourceTree = "<group>"; };
+		FE4EB3271D2A560E0036797F /* PasteLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PasteLabel.m; path = ../../../../GitHub/ObjectiveDemo/ObjectCDemo/ObjectCDemo/UI/PasteLabel.m; sourceTree = "<group>"; };
 		FE58F5A21CB3B6120045C324 /* RunD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunD.h; sourceTree = "<group>"; };
 		FE58F5A31CB3B6120045C324 /* RunD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunD.m; sourceTree = "<group>"; };
 		FE5D30601D53438200E7C44F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -205,15 +209,11 @@
 		FEC0F85E1D5837F700B15A78 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		FEC0F8661D58546B00B15A78 /* XManageCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XManageCoreData.h; sourceTree = "<group>"; };
 		FEC0F8671D58546B00B15A78 /* XManageCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XManageCoreData.m; sourceTree = "<group>"; };
-		FEC7618F1D2CA70400EEF994 /* GIFImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIFImageView.h; sourceTree = "<group>"; };
-		FEC761901D2CA70400EEF994 /* GIFImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIFImageView.m; sourceTree = "<group>"; };
 		FEEA49B71CC66B040093ADBF /* KvokvcViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KvokvcViewController.h; sourceTree = "<group>"; };
 		FEEA49B81CC66B040093ADBF /* KvokvcViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KvokvcViewController.m; sourceTree = "<group>"; };
 		FEEA49B91CC66B040093ADBF /* KvokvcViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KvokvcViewController.xib; sourceTree = "<group>"; };
-		FEEA49BD1CC861B90093ADBF /* XView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XView.h; sourceTree = "<group>"; };
-		FEEA49BE1CC861B90093ADBF /* XView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XView.m; sourceTree = "<group>"; };
-		FEEB27EC1CE0798C00E79568 /* UIDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDatePickerViewController.h; sourceTree = "<group>"; };
-		FEEB27ED1CE0798C00E79568 /* UIDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDatePickerViewController.m; sourceTree = "<group>"; };
+		FEEB27EC1CE0798C00E79568 /* UIDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIDatePickerViewController.h; path = ../../../../GitHub/ObjectiveDemo/ObjectCDemo/ObjectCDemo/UI/UIDatePickerViewController.h; sourceTree = "<group>"; };
+		FEEB27ED1CE0798C00E79568 /* UIDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIDatePickerViewController.m; path = ../../../../GitHub/ObjectiveDemo/ObjectCDemo/ObjectCDemo/UI/UIDatePickerViewController.m; sourceTree = "<group>"; };
 		FEFA76371CF01D28004CF2C3 /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
 		FEFA76381CF01D28004CF2C3 /* API.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = API.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -270,6 +270,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6C99497A1D9E5B57000494C3 /* UIview */ = {
+			isa = PBXGroup;
+			children = (
+				6C99497B1D9E5B6C000494C3 /* XView.h */,
+				6C99497C1D9E5B6C000494C3 /* XView.m */,
+			);
+			name = UIview;
+			sourceTree = "<group>";
+		};
+		6C99497E1D9E5DF3000494C3 /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				FEEB27EC1CE0798C00E79568 /* UIDatePickerViewController.h */,
+				FEEB27ED1CE0798C00E79568 /* UIDatePickerViewController.m */,
+			);
+			name = PickerView;
+			sourceTree = "<group>";
+		};
+		6C99497F1D9E5E26000494C3 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				FE4EB3261D2A560E0036797F /* PasteLabel.h */,
+				FE4EB3271D2A560E0036797F /* PasteLabel.m */,
+			);
+			name = UILabel;
+			sourceTree = "<group>";
+		};
 		97CB46B154E6D1EFED573DB8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,8 +327,14 @@
 		FE00397A1D1138C5007294BB /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				6C99497F1D9E5E26000494C3 /* UILabel */,
+				6C99497E1D9E5DF3000494C3 /* PickerView */,
+				6C9949711D9E5AE1000494C3 /* LastTableViewController.h */,
+				6C9949721D9E5AE1000494C3 /* LastTableViewController.m */,
+				FE11857D1CA3CA950017CFEA /* uiwindow */,
+				6C99497A1D9E5B57000494C3 /* UIview */,
+				FEB99B021CF86BDE007B039F /* 文字 */,
 				FEC7618E1D2CA6F200EEF994 /* GIF */,
-				FEEA49BC1CC861970093ADBF /* UIView */,
 			);
 			name = UI;
 			path = ../../../../Git/ipad_psr/HomeHelper/UI;
@@ -350,7 +383,6 @@
 			children = (
 				FEF43B411D376FAC0083B8B3 /* swiftUI */,
 				FE00397A1D1138C5007294BB /* UI */,
-				FEB99B021CF86BDE007B039F /* 文字 */,
 				FE288EDA1CE2E98B008330E3 /* Thrift */,
 				FEEA49B51CC66A930093ADBF /* grammar */,
 				FE1185321CA37D680017CFEA /* AppDelegate.h */,
@@ -359,10 +391,6 @@
 				FE1185361CA37D680017CFEA /* FirstViewController.m */,
 				FE1185381CA37D680017CFEA /* SecondViewController.h */,
 				FE1185391CA37D680017CFEA /* SecondViewController.m */,
-				FE11856B1CA37E6F0017CFEA /* MainTableViewController.h */,
-				FE11856C1CA37E6F0017CFEA /* MainTableViewController.m */,
-				FE1185701CA37EB40017CFEA /* LastTableViewController.h */,
-				FE1185711CA37EB40017CFEA /* LastTableViewController.m */,
 				FE1EB7ED1CC497EC00D40400 /* XTabBarViewController.h */,
 				FE1EB7EE1CC497EC00D40400 /* XTabBarViewController.m */,
 				FE3490661D36422B001FC58C /* SwiftUIViewController.swift */,
@@ -420,6 +448,7 @@
 				FE11857F1CA3CABD0017CFEA /* XWindow.m */,
 			);
 			name = uiwindow;
+			path = ../../../../GitHub/ObjectiveDemo/ObjectCDemo/ObjectCDemo;
 			sourceTree = "<group>";
 		};
 		FE17AC6A1D13E5F900CD3AA5 /* Runloop */ = {
@@ -520,6 +549,7 @@
 				FEB99B041CF86BF6007B039F /* TextViewController.m */,
 			);
 			name = "文字";
+			path = ../../../../GitHub/ObjectiveDemo/ObjectCDemo/ObjectCDemo;
 			sourceTree = "<group>";
 		};
 		FEC09DD01CCA685E00C320FC /* cycle */ = {
@@ -543,8 +573,8 @@
 		FEC7618E1D2CA6F200EEF994 /* GIF */ = {
 			isa = PBXGroup;
 			children = (
-				FEC7618F1D2CA70400EEF994 /* GIFImageView.h */,
-				FEC761901D2CA70400EEF994 /* GIFImageView.m */,
+				6CA2E0441D9D0F7F009C5BBE /* GIFImageView.h */,
+				6CA2E0451D9D0F7F009C5BBE /* GIFImageView.m */,
 			);
 			name = GIF;
 			sourceTree = "<group>";
@@ -552,17 +582,17 @@
 		FEEA49B51CC66A930093ADBF /* grammar */ = {
 			isa = PBXGroup;
 			children = (
+				FE11856B1CA37E6F0017CFEA /* MainTableViewController.h */,
+				FE11856C1CA37E6F0017CFEA /* MainTableViewController.m */,
 				FE1F8AAB1D28D655000F8373 /* ReactiveCocoa */,
 				FE2142471D2123CE00FF2FA8 /* Coredata */,
 				FE17AC6A1D13E5F900CD3AA5 /* Runloop */,
 				FE0039761D11271F007294BB /* thread */,
 				FE0039721D11237E007294BB /* algorithm */,
 				FE0E2A971D06AF6A00F49470 /* 图文 */,
-				FEEB27EB1CE0797C00E79568 /* UI */,
 				FEC09DD41CCB24ED00C320FC /* Block */,
 				FEC09DD01CCA685E00C320FC /* cycle */,
 				FEEA49B61CC66AC40093ADBF /* KVOKVC */,
-				FE11857D1CA3CA950017CFEA /* uiwindow */,
 				FE1185761CA380FD0017CFEA /* RunTime */,
 			);
 			name = grammar;
@@ -576,27 +606,6 @@
 				FEEA49B91CC66B040093ADBF /* KvokvcViewController.xib */,
 			);
 			name = KVOKVC;
-			sourceTree = "<group>";
-		};
-		FEEA49BC1CC861970093ADBF /* UIView */ = {
-			isa = PBXGroup;
-			children = (
-				FEEA49BD1CC861B90093ADBF /* XView.h */,
-				FEEA49BE1CC861B90093ADBF /* XView.m */,
-			);
-			name = UIView;
-			path = ../../../../GitHub/ObjectiveDemo/ObjectCDemo/ObjectCDemo;
-			sourceTree = "<group>";
-		};
-		FEEB27EB1CE0797C00E79568 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				FEEB27EC1CE0798C00E79568 /* UIDatePickerViewController.h */,
-				FEEB27ED1CE0798C00E79568 /* UIDatePickerViewController.m */,
-				FE4EB3261D2A560E0036797F /* PasteLabel.h */,
-				FE4EB3271D2A560E0036797F /* PasteLabel.m */,
-			);
-			path = UI;
 			sourceTree = "<group>";
 		};
 		FEF43B411D376FAC0083B8B3 /* swiftUI */ = {
@@ -714,6 +723,7 @@
 				TargetAttributes = {
 					FE11852B1CA37D680017CFEA = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0800;
 					};
 					FE1185471CA37D680017CFEA = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -862,8 +872,8 @@
 				FEC0F85F1D5837F700B15A78 /* Car+CoreDataProperties.m in Sources */,
 				FE3490671D36422B001FC58C /* SwiftUIViewController.swift in Sources */,
 				FEC0F8611D5837F700B15A78 /* Person+CoreDataProperties.m in Sources */,
-				FE1185721CA37EB40017CFEA /* LastTableViewController.m in Sources */,
 				FE00A8AF1D544C4B008FEB3F /* XTextAttachment.m in Sources */,
+				6C99497D1D9E5B6C000494C3 /* XView.m in Sources */,
 				FEB99B051CF86BF6007B039F /* TextViewController.m in Sources */,
 				FEC09DD71CCB24F700C320FC /* BlockViewController.m in Sources */,
 				FEFA76391CF01D28004CF2C3 /* API.m in Sources */,
@@ -876,14 +886,14 @@
 				FE1185801CA3CABD0017CFEA /* XWindow.m in Sources */,
 				FE1185751CA37F300017CFEA /* RunTimeViewController.m in Sources */,
 				FE1185371CA37D680017CFEA /* FirstViewController.m in Sources */,
-				FEEA49BF1CC861B90093ADBF /* XView.m in Sources */,
 				FEC0F8621D5837F700B15A78 /* Person.m in Sources */,
 				FEEA49BA1CC66B040093ADBF /* KvokvcViewController.m in Sources */,
 				FE1185311CA37D680017CFEA /* main.m in Sources */,
 				FE1F8AAE1D28D674000F8373 /* RCDemoViewController.m in Sources */,
+				6CA2E0461D9D0F7F009C5BBE /* GIFImageView.m in Sources */,
 				FE0039751D1123AB007294BB /* AlgorithmViewController.m in Sources */,
-				FEC761911D2CA70400EEF994 /* GIFImageView.m in Sources */,
 				FE21424A1D2123E200FF2FA8 /* CoredataViewController.m in Sources */,
+				6C9949731D9E5AE1000494C3 /* LastTableViewController.m in Sources */,
 				FE0039791D11274B007294BB /* ThreadViewController.m in Sources */,
 				FE0E2A961D06AF6400F49470 /* ImageTextViewController.m in Sources */,
 			);
@@ -1061,6 +1071,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ObjectCDemo/ObjectCDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1076,6 +1087,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.chuangdianke.ObjectCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ObjectCDemo/ObjectCDemo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

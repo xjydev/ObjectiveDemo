@@ -14,20 +14,20 @@ class SwiftUIViewController: UIViewController,UITableViewDataSource,UITableViewD
     var items       : NSArray?
     override func viewDidLoad() {
         self.title = "swift"
-        mainTableView.backgroundColor = UIColor .redColor();
-        self.view.backgroundColor = UIColor.whiteColor();
+        mainTableView.backgroundColor = UIColor.red;
+        self.view.backgroundColor = UIColor.white;
          self.items = ["UILabel", "UIButton", "UIImageView", "UISlider", "UIWebView", "UISegmentedControl", "UISwitch", "UITextField", "UIScrollView", "UISearchBar", "UIPageControl", "UIDatePicker", "UIPickerView", "UIProgressView", "UITextView", "UIToolbar", "UIActionSheet", "UIActivityIndicatorView", "UICollectionView"]
     }
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.items!.count;
     }
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("swiftUIcell", forIndexPath: indexPath);
-        cell.textLabel?.text = self.items?.objectAtIndex(indexPath.row) as?String;
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "swiftUIcell", for: indexPath);
+        cell.textLabel?.text = self.items?.object(at: (indexPath as NSIndexPath).row) as?String;
         return cell;
     }
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        print(self.items?.objectAtIndex(indexPath.row));
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(self.items?.object(at: (indexPath as NSIndexPath).row));
     }
     
 }
