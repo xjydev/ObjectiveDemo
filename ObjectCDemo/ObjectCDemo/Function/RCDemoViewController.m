@@ -18,12 +18,50 @@
     [super viewDidLoad];
    
     [pasteLabel addPaste];
-    
+    //监听pro
     [RACObserve(self, pro)subscribeNext:^(id x) {
+        NSLog(@"pro == %@",x);
+        NSLog(@"pro == %@",self.pro);
+    }];
+    
+    //监听namearray，并且把0值赋给name
+    RAC(self,name) = [RACObserve(self, nameArray)map:^id(NSArray * value) {
+        NSLog(@"name ==%@",value);
+        return value[0];
+    }];
+    
+    //监听多个值里面的任何一个变化
+  RAC(self,num) = [[RACSignal merge:@[
+                        [RACObserve(self, name)distinctUntilChanged],
+                        [RACObserve(self, pro)distinctUntilChanged],
+                       ]]map:^id(id value) {
         
+        self.num = self.num + 1;
+        NSLog(@"merge ==%@ ==%@",value,@(self.num));
+        return @(_num +1);
     }];
     
    
+}
+- (IBAction)nameArraybuttonAction:(id)sender {
+    if (self.nameArray.count !=3) {
+        self.nameArray = @[@"11111",@"222222",@"333333"];
+    }
+    else
+    {
+       self.nameArray = @[@"8888",@"11111",@"222222",@"333333"];
+    }
+    
+}
+- (IBAction)proButtonAction:(id)sender {
+    if ([self.pro isEqualToString:@"1111"]) {
+        self.pro = @"pro1";
+    }
+    else
+    {
+       self.pro = @"1111";
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {

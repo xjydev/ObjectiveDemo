@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C5EA57D1DBA09370060CCCF /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5EA57C1DBA09370060CCCF /* KeychainWrapper.m */; };
 		6C908DD71DA88AE800EB8CF0 /* PasteLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C908DD21DA88AE700EB8CF0 /* PasteLabel.m */; };
 		6C908DD91DA88AE800EB8CF0 /* XView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C908DD61DA88AE700EB8CF0 /* XView.m */; };
 		6C908DDC1DA88B0C00EB8CF0 /* XWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C908DDB1DA88B0C00EB8CF0 /* XWindow.m */; };
@@ -117,6 +118,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6C3CF9351DB87AB000A9453C /* ObjectCDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ObjectCDemo.entitlements; sourceTree = "<group>"; };
+		6C5EA57B1DBA09370060CCCF /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
+		6C5EA57C1DBA09370060CCCF /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
 		6C908DD11DA88AE700EB8CF0 /* PasteLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PasteLabel.h; path = ObjectCDemo/UI/PasteLabel.h; sourceTree = SOURCE_ROOT; };
 		6C908DD21DA88AE700EB8CF0 /* PasteLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PasteLabel.m; path = ObjectCDemo/UI/PasteLabel.m; sourceTree = SOURCE_ROOT; };
 		6C908DD51DA88AE700EB8CF0 /* XView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XView.h; path = ObjectCDemo/UI/XView.h; sourceTree = SOURCE_ROOT; };
@@ -268,6 +272,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6C5EA57A1DBA09270060CCCF /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				6C5EA57B1DBA09370060CCCF /* KeychainWrapper.h */,
+				6C5EA57C1DBA09370060CCCF /* KeychainWrapper.m */,
+			);
+			name = Keychain;
+			sourceTree = "<group>";
+		};
 		6C908E0A1DA8BC3500EB8CF0 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -371,7 +384,6 @@
 		FE1185231CA37D680017CFEA = {
 			isa = PBXGroup;
 			children = (
-				FE5D30621D5343E700E7C44F /* Model.xcdatamodeld */,
 				FE11852E1CA37D680017CFEA /* ObjectCDemo */,
 				FE11854B1CA37D680017CFEA /* ObjectCDemoTests */,
 				FE1185561CA37D680017CFEA /* ObjectCDemoUITests */,
@@ -398,6 +410,7 @@
 		FE11852E1CA37D680017CFEA /* ObjectCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6C3CF9351DB87AB000A9453C /* ObjectCDemo.entitlements */,
 				FEF43B411D376FAC0083B8B3 /* swiftUI */,
 				FE00397A1D1138C5007294BB /* UI */,
 				FE288EDA1CE2E98B008330E3 /* Thrift */,
@@ -412,6 +425,7 @@
 				FE1EB7EE1CC497EC00D40400 /* XTabBarViewController.m */,
 				FE3490661D36422B001FC58C /* SwiftUIViewController.swift */,
 				FE11853B1CA37D680017CFEA /* Main.storyboard */,
+				FE5D30621D5343E700E7C44F /* Model.xcdatamodeld */,
 				FE11853E1CA37D680017CFEA /* Assets.xcassets */,
 				FE1185401CA37D680017CFEA /* LaunchScreen.storyboard */,
 				FE1185431CA37D680017CFEA /* Info.plist */,
@@ -580,6 +594,7 @@
 		FEEA49B51CC66A930093ADBF /* grammar */ = {
 			isa = PBXGroup;
 			children = (
+				6C5EA57A1DBA09270060CCCF /* Keychain */,
 				6C908E0A1DA8BC3500EB8CF0 /* CoreData */,
 				FE11856B1CA37E6F0017CFEA /* MainTableViewController.h */,
 				FE11856C1CA37E6F0017CFEA /* MainTableViewController.m */,
@@ -720,7 +735,16 @@
 				TargetAttributes = {
 					FE11852B1CA37D680017CFEA = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = SXQPDBEYMH;
 						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					FE1185471CA37D680017CFEA = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -862,6 +886,7 @@
 				6C908DDF1DA88C1600EB8CF0 /* RCDemoViewController.m in Sources */,
 				FEEB27EE1CE0798C00E79568 /* UIDatePickerViewController.m in Sources */,
 				FE5D30641D5343E700E7C44F /* Model.xcdatamodeld in Sources */,
+				6C5EA57D1DBA09370060CCCF /* KeychainWrapper.m in Sources */,
 				6C908E1A1DA8BC6600EB8CF0 /* Person.m in Sources */,
 				6C908E181DA8BC6600EB8CF0 /* Car+CoreDataProperties.m in Sources */,
 				FE3490671D36422B001FC58C /* SwiftUIViewController.swift in Sources */,
@@ -1060,7 +1085,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ObjectCDemo/ObjectCDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = SXQPDBEYMH;
 				INFOPLIST_FILE = ObjectCDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chuangdianke.ObjectCDemo;
@@ -1077,7 +1104,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ObjectCDemo/ObjectCDemo.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				DEVELOPMENT_TEAM = SXQPDBEYMH;
 				INFOPLIST_FILE = ObjectCDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chuangdianke.ObjectCDemo;
@@ -1263,7 +1292,8 @@
 				FE5D30631D5343E700E7C44F /* Model.xcdatamodel */,
 			);
 			currentVersion = FE5D30631D5343E700E7C44F /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
+			name = Model.xcdatamodeld;
+			path = ../Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

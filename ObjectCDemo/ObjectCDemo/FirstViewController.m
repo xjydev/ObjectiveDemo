@@ -58,6 +58,9 @@
     XView  *view = [[XView  alloc]initWithFrame:CGRectMake(200, 64, 200, 200)];
     view.backgroundColor = [UIColor blueColor];
     [self.view addSubview:view];
+    view.layer.cornerRadius = 100;
+    view.clipsToBounds = YES;
+    
     NSThread *thread = [NSThread currentThread];
     NSLog(@"===%@",thread);
 //
