@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C388C0E1DD94BFB00AF1B2E /* FileManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C388C0D1DD94BFB00AF1B2E /* FileManagerViewController.m */; };
 		6C5EA57D1DBA09370060CCCF /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5EA57C1DBA09370060CCCF /* KeychainWrapper.m */; };
 		6C908DD71DA88AE800EB8CF0 /* PasteLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C908DD21DA88AE700EB8CF0 /* PasteLabel.m */; };
 		6C908DD91DA88AE800EB8CF0 /* XView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C908DD61DA88AE700EB8CF0 /* XView.m */; };
@@ -30,6 +31,10 @@
 		6C908E1C1DA8BC6600EB8CF0 /* XManageCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C908E161DA8BC6600EB8CF0 /* XManageCoreData.m */; };
 		6C9949731D9E5AE1000494C3 /* LastTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9949721D9E5AE1000494C3 /* LastTableViewController.m */; };
 		6CA2E0461D9D0F7F009C5BBE /* GIFImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA2E0451D9D0F7F009C5BBE /* GIFImageView.m */; };
+		6CC703CC1DEE8C1300CE145A /* AudioPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC703CB1DEE8C1300CE145A /* AudioPlayViewController.m */; };
+		6CC703CE1DEE9BFA00CE145A /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CC703CD1DEE9BFA00CE145A /* CoreAudio.framework */; };
+		6CC703D01DEE9C7000CE145A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CC703CF1DEE9C7000CE145A /* AVFoundation.framework */; };
+		6CC703D21DEEDBA700CE145A /* 11111.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6CC703D11DEEDBA700CE145A /* 11111.mp3 */; };
 		9A2243D74E8BCDF649C5F454 /* Pods_ObjectCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E3E053ACC7BC101A8C1D8D /* Pods_ObjectCDemo.framework */; };
 		FE00A8AC1D5422C8008FEB3F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE00A8AB1D5422C8008FEB3F /* CoreText.framework */; };
 		FE00A8AF1D544C4B008FEB3F /* XTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = FE00A8AE1D544C4B008FEB3F /* XTextAttachment.m */; };
@@ -118,6 +123,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6C388C0C1DD94BFB00AF1B2E /* FileManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManagerViewController.h; sourceTree = "<group>"; };
+		6C388C0D1DD94BFB00AF1B2E /* FileManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManagerViewController.m; sourceTree = "<group>"; };
 		6C3CF9351DB87AB000A9453C /* ObjectCDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ObjectCDemo.entitlements; sourceTree = "<group>"; };
 		6C5EA57B1DBA09370060CCCF /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
 		6C5EA57C1DBA09370060CCCF /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
@@ -165,6 +172,11 @@
 		6C9949721D9E5AE1000494C3 /* LastTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LastTableViewController.m; path = ObjectCDemo/LastTableViewController.m; sourceTree = SOURCE_ROOT; };
 		6CA2E0441D9D0F7F009C5BBE /* GIFImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GIFImageView.h; path = ObjectCDemo/UI/GIFImageView.h; sourceTree = SOURCE_ROOT; };
 		6CA2E0451D9D0F7F009C5BBE /* GIFImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GIFImageView.m; path = ObjectCDemo/UI/GIFImageView.m; sourceTree = SOURCE_ROOT; };
+		6CC703CA1DEE8C1300CE145A /* AudioPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayViewController.h; sourceTree = "<group>"; };
+		6CC703CB1DEE8C1300CE145A /* AudioPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayViewController.m; sourceTree = "<group>"; };
+		6CC703CD1DEE9BFA00CE145A /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		6CC703CF1DEE9C7000CE145A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6CC703D11DEEDBA700CE145A /* 11111.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 11111.mp3; sourceTree = "<group>"; };
 		93E3E053ACC7BC101A8C1D8D /* Pods_ObjectCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE176A33EA281EB4DCD5D88 /* Pods-ObjectCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectCDemo/Pods-ObjectCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F25C032C8AA32DEC50BEB247 /* Pods-ObjectCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectCDemo/Pods-ObjectCDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -232,6 +244,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CC703D01DEE9C7000CE145A /* AVFoundation.framework in Frameworks */,
+				6CC703CE1DEE9BFA00CE145A /* CoreAudio.framework in Frameworks */,
 				FE00A8AC1D5422C8008FEB3F /* CoreText.framework in Frameworks */,
 				FE5D30611D53438200E7C44F /* CoreData.framework in Frameworks */,
 				9A2243D74E8BCDF649C5F454 /* Pods_ObjectCDemo.framework in Frameworks */,
@@ -265,11 +279,22 @@
 		13FAE18B031BA8ED14F8E1FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6CC703CF1DEE9C7000CE145A /* AVFoundation.framework */,
+				6CC703CD1DEE9BFA00CE145A /* CoreAudio.framework */,
 				FE00A8AB1D5422C8008FEB3F /* CoreText.framework */,
 				FE5D30601D53438200E7C44F /* CoreData.framework */,
 				93E3E053ACC7BC101A8C1D8D /* Pods_ObjectCDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C388C0B1DD94BD400AF1B2E /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				6C388C0C1DD94BFB00AF1B2E /* FileManagerViewController.h */,
+				6C388C0D1DD94BFB00AF1B2E /* FileManagerViewController.m */,
+			);
+			name = FileManager;
 			sourceTree = "<group>";
 		};
 		6C5EA57A1DBA09270060CCCF /* Keychain */ = {
@@ -325,6 +350,15 @@
 			children = (
 			);
 			name = UILabel;
+			sourceTree = "<group>";
+		};
+		6CC703C91DEE8BFF00CE145A /* AudioPlay */ = {
+			isa = PBXGroup;
+			children = (
+				6CC703CA1DEE8C1300CE145A /* AudioPlayViewController.h */,
+				6CC703CB1DEE8C1300CE145A /* AudioPlayViewController.m */,
+			);
+			name = AudioPlay;
 			sourceTree = "<group>";
 		};
 		97CB46B154E6D1EFED573DB8 /* Pods */ = {
@@ -410,6 +444,7 @@
 		FE11852E1CA37D680017CFEA /* ObjectCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6CC703D11DEEDBA700CE145A /* 11111.mp3 */,
 				6C3CF9351DB87AB000A9453C /* ObjectCDemo.entitlements */,
 				FEF43B411D376FAC0083B8B3 /* swiftUI */,
 				FE00397A1D1138C5007294BB /* UI */,
@@ -594,6 +629,8 @@
 		FEEA49B51CC66A930093ADBF /* grammar */ = {
 			isa = PBXGroup;
 			children = (
+				6CC703C91DEE8BFF00CE145A /* AudioPlay */,
+				6C388C0B1DD94BD400AF1B2E /* FileManager */,
 				6C5EA57A1DBA09270060CCCF /* Keychain */,
 				6C908E0A1DA8BC3500EB8CF0 /* CoreData */,
 				FE11856B1CA37E6F0017CFEA /* MainTableViewController.h */,
@@ -737,12 +774,13 @@
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = SXQPDBEYMH;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -793,6 +831,7 @@
 				FE1185421CA37D680017CFEA /* LaunchScreen.storyboard in Resources */,
 				FE11853F1CA37D680017CFEA /* Assets.xcassets in Resources */,
 				FE11853D1CA37D680017CFEA /* Main.storyboard in Resources */,
+				6CC703D21DEEDBA700CE145A /* 11111.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -842,7 +881,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		6911625C4C19753B7135A058 /* [CP] Embed Pods Frameworks */ = {
@@ -911,9 +950,11 @@
 				FE1185311CA37D680017CFEA /* main.m in Sources */,
 				6C908DD71DA88AE800EB8CF0 /* PasteLabel.m in Sources */,
 				6CA2E0461D9D0F7F009C5BBE /* GIFImageView.m in Sources */,
+				6CC703CC1DEE8C1300CE145A /* AudioPlayViewController.m in Sources */,
 				6C908DEE1DA88D7D00EB8CF0 /* TextViewController.m in Sources */,
 				6C9949731D9E5AE1000494C3 /* LastTableViewController.m in Sources */,
 				6C908DF11DA88DA400EB8CF0 /* RunLoopViewController.m in Sources */,
+				6C388C0E1DD94BFB00AF1B2E /* FileManagerViewController.m in Sources */,
 				6C908DD91DA88AE800EB8CF0 /* XView.m in Sources */,
 				6C908E1B1DA8BC6600EB8CF0 /* Person+CoreDataProperties.m in Sources */,
 				6C908E001DA8BBD400EB8CF0 /* CycleViewController.m in Sources */,
@@ -1085,8 +1126,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = ObjectCDemo/ObjectCDemo.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXQPDBEYMH;
 				INFOPLIST_FILE = ObjectCDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1104,8 +1145,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = ObjectCDemo/ObjectCDemo.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SXQPDBEYMH;
 				INFOPLIST_FILE = ObjectCDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

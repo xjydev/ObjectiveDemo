@@ -6,83 +6,88 @@
 	<dict>
 		<key>AFNetworking.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>AsyncDisplayKit.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>CTPersistance.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>DateTools.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>MBProgressHUD.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>NSData+Base64.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>7</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>PINCache.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>8</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>PINRemoteImage.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>9</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-ObjectCDemo.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>10</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>ReactiveCocoa.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>11</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>ReactiveViewModel.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>12</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>SDWebImage.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>13</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>SVPullToRefresh.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>14</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>XRefresh.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>16</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>YYKit.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>17</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>thrift.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>15</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>175C53875D968DEBA8107E9B1FB7409C</key>
+		<key>164840C684AA20B9FD48B72F82CD25DA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,37 +97,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2B840F1C281A84A532BDBE2073A0B4D0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2D198BBA60DB3871705CB228F29C79C3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4743041EBF934949D8C035D335D79CF6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>5F55189113AE45EC7C421A050A369FF1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5F7D68FE8044B38F8E863140F287EE75</key>
+		<key>61474D2BDA74CD29C890346E62C983F0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6CA148615D72CEB635698BBBBACAB350</key>
+		<key>6BCB4A85FEA1CD1F6B0865D942377B6F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7CEF2D62197EF3718D3D0A1B758283E8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>81CF0B648FD0A2E1F69ACD3587A55B83</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>829139C101286117FD096EDF800AEDD0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -137,7 +137,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AE1BD1B7DD1A46F90EDD516F9583BC0C</key>
+		<key>A4583C80CC2E2EA13F4D4CF1BCBBFDE7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A919AA841F1A62358F899CFE11AAF571</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -147,12 +152,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C901BFF2B76D5462EA2340DB6791A674</key>
+		<key>BDB8740DCF1BABD4645A3BB7B3C2A435</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>E61CE3B6DFA1FE6B3E296965C76C0E10</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FFA41D9897D190067AC9BAC5C5E458C5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

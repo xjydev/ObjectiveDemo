@@ -86,6 +86,7 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
   install_framework "$BUILT_PRODUCTS_DIR/AsyncDisplayKit/AsyncDisplayKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/CTPersistance/CTPersistance.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DateTools/DateTools.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MBProgressHUD/MBProgressHUD.framework"
   install_framework "$BUILT_PRODUCTS_DIR/NSData+Base64/NSData_Base64.framework"
@@ -102,6 +103,7 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/AFNetworking/AFNetworking.framework"
   install_framework "$BUILT_PRODUCTS_DIR/AsyncDisplayKit/AsyncDisplayKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/CTPersistance/CTPersistance.framework"
   install_framework "$BUILT_PRODUCTS_DIR/DateTools/DateTools.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MBProgressHUD/MBProgressHUD.framework"
   install_framework "$BUILT_PRODUCTS_DIR/NSData+Base64/NSData_Base64.framework"

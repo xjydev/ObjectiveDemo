@@ -17,6 +17,7 @@ target 'ObjectCDemo' do
   pod 'DateTools'
   pod 'XRefresh'
   pod 'AsyncDisplayKit'
+  pod 'CTPersistance'
   
 end
 
