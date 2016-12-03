@@ -35,6 +35,7 @@
 		6CC703CE1DEE9BFA00CE145A /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CC703CD1DEE9BFA00CE145A /* CoreAudio.framework */; };
 		6CC703D01DEE9C7000CE145A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CC703CF1DEE9C7000CE145A /* AVFoundation.framework */; };
 		6CC703D21DEEDBA700CE145A /* 11111.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6CC703D11DEEDBA700CE145A /* 11111.mp3 */; };
+		6CEB73C81DF1AC4E00DB6D63 /* EncryptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEB73C71DF1AC4E00DB6D63 /* EncryptViewController.m */; };
 		9A2243D74E8BCDF649C5F454 /* Pods_ObjectCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E3E053ACC7BC101A8C1D8D /* Pods_ObjectCDemo.framework */; };
 		FE00A8AC1D5422C8008FEB3F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE00A8AB1D5422C8008FEB3F /* CoreText.framework */; };
 		FE00A8AF1D544C4B008FEB3F /* XTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = FE00A8AE1D544C4B008FEB3F /* XTextAttachment.m */; };
@@ -177,6 +178,8 @@
 		6CC703CD1DEE9BFA00CE145A /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		6CC703CF1DEE9C7000CE145A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		6CC703D11DEEDBA700CE145A /* 11111.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 11111.mp3; sourceTree = "<group>"; };
+		6CEB73C61DF1AC4E00DB6D63 /* EncryptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptViewController.h; sourceTree = "<group>"; };
+		6CEB73C71DF1AC4E00DB6D63 /* EncryptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptViewController.m; sourceTree = "<group>"; };
 		93E3E053ACC7BC101A8C1D8D /* Pods_ObjectCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE176A33EA281EB4DCD5D88 /* Pods-ObjectCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectCDemo/Pods-ObjectCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F25C032C8AA32DEC50BEB247 /* Pods-ObjectCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObjectCDemo/Pods-ObjectCDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -359,6 +362,15 @@
 				6CC703CB1DEE8C1300CE145A /* AudioPlayViewController.m */,
 			);
 			name = AudioPlay;
+			sourceTree = "<group>";
+		};
+		6CEB73C51DF1AC3500DB6D63 /* Encrypt */ = {
+			isa = PBXGroup;
+			children = (
+				6CEB73C61DF1AC4E00DB6D63 /* EncryptViewController.h */,
+				6CEB73C71DF1AC4E00DB6D63 /* EncryptViewController.m */,
+			);
+			name = Encrypt;
 			sourceTree = "<group>";
 		};
 		97CB46B154E6D1EFED573DB8 /* Pods */ = {
@@ -629,6 +641,7 @@
 		FEEA49B51CC66A930093ADBF /* grammar */ = {
 			isa = PBXGroup;
 			children = (
+				6CEB73C51DF1AC3500DB6D63 /* Encrypt */,
 				6CC703C91DEE8BFF00CE145A /* AudioPlay */,
 				6C388C0B1DD94BD400AF1B2E /* FileManager */,
 				6C5EA57A1DBA09270060CCCF /* Keychain */,
@@ -939,6 +952,7 @@
 				FE11856E1CA37E6F0017CFEA /* MainTableViewController.m in Sources */,
 				FE1EB7EF1CC497EC00D40400 /* XTabBarViewController.m in Sources */,
 				6C908DF71DA88DD900EB8CF0 /* AlgorithmViewController.m in Sources */,
+				6CEB73C81DF1AC4E00DB6D63 /* EncryptViewController.m in Sources */,
 				6C908E171DA8BC6600EB8CF0 /* Car.m in Sources */,
 				FE288EE31CE2EA07008330E3 /* ThriftManger.m in Sources */,
 				6C908E091DA8BC1500EB8CF0 /* RunTimeViewController.m in Sources */,

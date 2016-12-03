@@ -47,16 +47,16 @@
     //初始化player对象
     self.player = [[AVPlayer alloc] initWithPlayerItem:item];
 //    设置播放页面
-//    AVPlayerLayer *layer = [AVPlayerLayer playerLayerWithPlayer:_player];
-//    //设置播放页面的大小
-//    layer.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 300);
-//    layer.backgroundColor = [UIColor cyanColor].CGColor;
-//    //设置播放窗口和当前视图之间的比例显示内容
-//    layer.videoGravity = AVLayerVideoGravityResizeAspect;
-//    //添加播放视图到self.view
-//    [self.view.layer addSublayer:layer];
-//    //设置播放进度的默认值
-//    self.progressSlider.value = 0;
+    AVPlayerLayer *layer = [AVPlayerLayer playerLayerWithPlayer:_player];
+    //设置播放页面的大小
+    layer.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 300);
+    layer.backgroundColor = [UIColor cyanColor].CGColor;
+    //设置播放窗口和当前视图之间的比例显示内容
+    layer.videoGravity = AVLayerVideoGravityResizeAspect;
+    //添加播放视图到self.view
+    [self.view.layer addSublayer:layer];
+    //设置播放进度的默认值
+    self.progressSlider.value = 0;
     //设置播放的默认音量值
     self.player.volume = 1.0f;
     [self.player play];
