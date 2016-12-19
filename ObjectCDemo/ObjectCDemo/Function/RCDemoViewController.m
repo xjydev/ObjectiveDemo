@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
+   //http://www.jianshu.com/p/e10e5ca413b7
     [pasteLabel addPaste];
     //监听pro
     [RACObserve(self, pro)subscribeNext:^(id x) {
@@ -39,6 +39,9 @@
         self.num = self.num + 1;
         NSLog(@"merge ==%@ ==%@",value,@(self.num));
         return @(_num +1);
+    }];
+    [RACSignal combineLatest:@[] reduce:^id{
+        return [RACSignal copy];
     }];
     
    

@@ -33,10 +33,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   //
+   //http://www.cocoachina.com/ios/20150601/11970.html
+    //Runloop:[Mode:[modeItem:{Soruce,Timer,Observer},],];
+    //一个Runloop包含多个mode，一个mode包含ModeItem，一个ModeItem也可以被多个mode包含，mode中没有item时，runloop退出。
    NSTimer *time = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerBegain) userInfo:nil repeats:YES];
     //然后让time添加到NSRunLoopCommonModes里面，滑动的时候就可以不影响了。
     [[NSRunLoop currentRunLoop]addTimer:time forMode:NSRunLoopCommonModes];
+    NSThread *mainThread = [NSThread mainThread];
+    NSRunLoop *mainLoop = [NSRunLoop mainRunLoop];
+//    mainLoop.currentMode.
     
 //    dispatch_async(dispatch_get_global_queue(0, 0), ^{
 //         NSTimer *foottimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(foottimerBegain) userInfo:nil repeats:YES];

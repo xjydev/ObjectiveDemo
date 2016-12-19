@@ -1,18 +1,24 @@
 PODS:
-  - AFNetworking (3.1.0):
-    - AFNetworking/NSURLSession (= 3.1.0)
-    - AFNetworking/Reachability (= 3.1.0)
-    - AFNetworking/Security (= 3.1.0)
-    - AFNetworking/Serialization (= 3.1.0)
-    - AFNetworking/UIKit (= 3.1.0)
-  - AFNetworking/NSURLSession (3.1.0):
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.1.0)
-  - AFNetworking/Security (3.1.0)
-  - AFNetworking/Serialization (3.1.0)
-  - AFNetworking/UIKit (3.1.0):
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - AsyncDisplayKit (1.9.81):
     - AsyncDisplayKit/PINRemoteImage (= 1.9.81)
@@ -51,7 +57,7 @@ PODS:
   - YYKit/no-arc (1.0.5)
 
 DEPENDENCIES:
-  - AFNetworking (~> 3.0)
+  - AFNetworking (~> 2.6.0)
   - AsyncDisplayKit
   - CTPersistance
   - DateTools
@@ -66,7 +72,7 @@ DEPENDENCIES:
   - YYKit (= 1.0.5)
 
 SPEC CHECKSUMS:
-  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   AsyncDisplayKit: 011ea22a76a79a5bbfc14501fede6e0196a3c2f0
   CTPersistance: 86702ef1e5dc44d73795a0757e056c6cd816924f
   DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
@@ -82,6 +88,6 @@ SPEC CHECKSUMS:
   XRefresh: a7be7b07fc7aa921f1d1d6bcd6fa33c3614b2084
   YYKit: f2654fe525de2283648db957bddb37ddd8e06549
 
-PODFILE CHECKSUM: 2cfe737436a2bdcf00fd3dfd4ebb4e2582eda7e7
+PODFILE CHECKSUM: 473dd949f9fdf03f2effa9d65759c4b4be2bfc0a
 
 COCOAPODS: 1.0.1

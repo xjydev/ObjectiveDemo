@@ -28,7 +28,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>com.chuangdianke.ObjectCDemo</string>
+	<string>cn.xiaodev.ObjectCDemo</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>

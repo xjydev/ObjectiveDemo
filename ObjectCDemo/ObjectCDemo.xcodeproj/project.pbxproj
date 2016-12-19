@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6C388C0E1DD94BFB00AF1B2E /* FileManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C388C0D1DD94BFB00AF1B2E /* FileManagerViewController.m */; };
+		6C3D44621E07950F00B5E1EF /* EmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3D44611E07950F00B5E1EF /* EmailViewController.m */; };
+		6C3D44641E07957600B5E1EF /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3D44631E07957600B5E1EF /* MessageUI.framework */; };
 		6C5EA57D1DBA09370060CCCF /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5EA57C1DBA09370060CCCF /* KeychainWrapper.m */; };
 		6C908DD71DA88AE800EB8CF0 /* PasteLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C908DD21DA88AE700EB8CF0 /* PasteLabel.m */; };
 		6C908DD91DA88AE800EB8CF0 /* XView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C908DD61DA88AE700EB8CF0 /* XView.m */; };
@@ -34,7 +36,6 @@
 		6CC703CC1DEE8C1300CE145A /* AudioPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC703CB1DEE8C1300CE145A /* AudioPlayViewController.m */; };
 		6CC703CE1DEE9BFA00CE145A /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CC703CD1DEE9BFA00CE145A /* CoreAudio.framework */; };
 		6CC703D01DEE9C7000CE145A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CC703CF1DEE9C7000CE145A /* AVFoundation.framework */; };
-		6CC703D21DEEDBA700CE145A /* 11111.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6CC703D11DEEDBA700CE145A /* 11111.mp3 */; };
 		6CEB73C81DF1AC4E00DB6D63 /* EncryptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEB73C71DF1AC4E00DB6D63 /* EncryptViewController.m */; };
 		9A2243D74E8BCDF649C5F454 /* Pods_ObjectCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E3E053ACC7BC101A8C1D8D /* Pods_ObjectCDemo.framework */; };
 		FE00A8AC1D5422C8008FEB3F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE00A8AB1D5422C8008FEB3F /* CoreText.framework */; };
@@ -127,6 +128,9 @@
 		6C388C0C1DD94BFB00AF1B2E /* FileManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManagerViewController.h; sourceTree = "<group>"; };
 		6C388C0D1DD94BFB00AF1B2E /* FileManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManagerViewController.m; sourceTree = "<group>"; };
 		6C3CF9351DB87AB000A9453C /* ObjectCDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ObjectCDemo.entitlements; sourceTree = "<group>"; };
+		6C3D44601E07950F00B5E1EF /* EmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailViewController.h; sourceTree = "<group>"; };
+		6C3D44611E07950F00B5E1EF /* EmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailViewController.m; sourceTree = "<group>"; };
+		6C3D44631E07957600B5E1EF /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		6C5EA57B1DBA09370060CCCF /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
 		6C5EA57C1DBA09370060CCCF /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
 		6C908DD11DA88AE700EB8CF0 /* PasteLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PasteLabel.h; path = ObjectCDemo/UI/PasteLabel.h; sourceTree = SOURCE_ROOT; };
@@ -177,7 +181,6 @@
 		6CC703CB1DEE8C1300CE145A /* AudioPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayViewController.m; sourceTree = "<group>"; };
 		6CC703CD1DEE9BFA00CE145A /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		6CC703CF1DEE9C7000CE145A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		6CC703D11DEEDBA700CE145A /* 11111.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 11111.mp3; sourceTree = "<group>"; };
 		6CEB73C61DF1AC4E00DB6D63 /* EncryptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptViewController.h; sourceTree = "<group>"; };
 		6CEB73C71DF1AC4E00DB6D63 /* EncryptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptViewController.m; sourceTree = "<group>"; };
 		93E3E053ACC7BC101A8C1D8D /* Pods_ObjectCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -247,6 +250,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C3D44641E07957600B5E1EF /* MessageUI.framework in Frameworks */,
 				6CC703D01DEE9C7000CE145A /* AVFoundation.framework in Frameworks */,
 				6CC703CE1DEE9BFA00CE145A /* CoreAudio.framework in Frameworks */,
 				FE00A8AC1D5422C8008FEB3F /* CoreText.framework in Frameworks */,
@@ -282,6 +286,7 @@
 		13FAE18B031BA8ED14F8E1FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6C3D44631E07957600B5E1EF /* MessageUI.framework */,
 				6CC703CF1DEE9C7000CE145A /* AVFoundation.framework */,
 				6CC703CD1DEE9BFA00CE145A /* CoreAudio.framework */,
 				FE00A8AB1D5422C8008FEB3F /* CoreText.framework */,
@@ -298,6 +303,15 @@
 				6C388C0D1DD94BFB00AF1B2E /* FileManagerViewController.m */,
 			);
 			name = FileManager;
+			sourceTree = "<group>";
+		};
+		6C3D445F1E0794F900B5E1EF /* email */ = {
+			isa = PBXGroup;
+			children = (
+				6C3D44601E07950F00B5E1EF /* EmailViewController.h */,
+				6C3D44611E07950F00B5E1EF /* EmailViewController.m */,
+			);
+			name = email;
 			sourceTree = "<group>";
 		};
 		6C5EA57A1DBA09270060CCCF /* Keychain */ = {
@@ -456,7 +470,6 @@
 		FE11852E1CA37D680017CFEA /* ObjectCDemo */ = {
 			isa = PBXGroup;
 			children = (
-				6CC703D11DEEDBA700CE145A /* 11111.mp3 */,
 				6C3CF9351DB87AB000A9453C /* ObjectCDemo.entitlements */,
 				FEF43B411D376FAC0083B8B3 /* swiftUI */,
 				FE00397A1D1138C5007294BB /* UI */,
@@ -641,6 +654,7 @@
 		FEEA49B51CC66A930093ADBF /* grammar */ = {
 			isa = PBXGroup;
 			children = (
+				6C3D445F1E0794F900B5E1EF /* email */,
 				6CEB73C51DF1AC3500DB6D63 /* Encrypt */,
 				6CC703C91DEE8BFF00CE145A /* AudioPlay */,
 				6C388C0B1DD94BD400AF1B2E /* FileManager */,
@@ -785,7 +799,7 @@
 				TargetAttributes = {
 					FE11852B1CA37D680017CFEA = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = SXQPDBEYMH;
+						DevelopmentTeam = Q494Q8N6JY;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -799,17 +813,21 @@
 					};
 					FE1185471CA37D680017CFEA = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = Q494Q8N6JY;
 						TestTargetID = FE11852B1CA37D680017CFEA;
 					};
 					FE1185521CA37D680017CFEA = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = Q494Q8N6JY;
 						TestTargetID = FE11852B1CA37D680017CFEA;
 					};
 					FE1EB7C21CC384F800D40400 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = Q494Q8N6JY;
 					};
 					FE1EB7CE1CC384F800D40400 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = Q494Q8N6JY;
 					};
 				};
 			};
@@ -844,7 +862,6 @@
 				FE1185421CA37D680017CFEA /* LaunchScreen.storyboard in Resources */,
 				FE11853F1CA37D680017CFEA /* Assets.xcassets in Resources */,
 				FE11853D1CA37D680017CFEA /* Main.storyboard in Resources */,
-				6CC703D21DEEDBA700CE145A /* 11111.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -934,6 +951,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C3D44621E07950F00B5E1EF /* EmailViewController.m in Sources */,
 				FE11853A1CA37D680017CFEA /* SecondViewController.m in Sources */,
 				6C908DDF1DA88C1600EB8CF0 /* RCDemoViewController.m in Sources */,
 				FEEB27EE1CE0798C00E79568 /* UIDatePickerViewController.m in Sources */,
@@ -1142,10 +1160,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = SXQPDBEYMH;
+				DEVELOPMENT_TEAM = Q494Q8N6JY;
 				INFOPLIST_FILE = ObjectCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.chuangdianke.ObjectCDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.xiaodev.ObjectCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ObjectCDemo/ObjectCDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1161,10 +1180,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = SXQPDBEYMH;
+				DEVELOPMENT_TEAM = Q494Q8N6JY;
 				INFOPLIST_FILE = ObjectCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.chuangdianke.ObjectCDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.xiaodev.ObjectCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ObjectCDemo/ObjectCDemo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
@@ -1175,6 +1195,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Q494Q8N6JY;
 				INFOPLIST_FILE = ObjectCDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chuangdianke.ObjectCDemoTests;
@@ -1187,6 +1208,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Q494Q8N6JY;
 				INFOPLIST_FILE = ObjectCDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chuangdianke.ObjectCDemoTests;
@@ -1198,6 +1220,7 @@
 		FE1185631CA37D680017CFEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = Q494Q8N6JY;
 				INFOPLIST_FILE = ObjectCDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chuangdianke.ObjectCDemoUITests;
@@ -1210,6 +1233,7 @@
 		FE1185641CA37D680017CFEA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = Q494Q8N6JY;
 				INFOPLIST_FILE = ObjectCDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chuangdianke.ObjectCDemoUITests;
@@ -1224,9 +1248,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
+				DEVELOPMENT_TEAM = Q494Q8N6JY;
 				IBSC_MODULE = ObjectWatch_Extension;
 				INFOPLIST_FILE = ObjectWatch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.chuangdianke.ObjectCDemo.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.xiaodev.ObjectCDemo.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1240,9 +1265,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
+				DEVELOPMENT_TEAM = Q494Q8N6JY;
 				IBSC_MODULE = ObjectWatch_Extension;
 				INFOPLIST_FILE = ObjectWatch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.chuangdianke.ObjectCDemo.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.xiaodev.ObjectCDemo.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1255,9 +1281,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
+				DEVELOPMENT_TEAM = Q494Q8N6JY;
 				INFOPLIST_FILE = "ObjectWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.chuangdianke.ObjectCDemo.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.xiaodev.ObjectCDemo.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1270,9 +1297,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
+				DEVELOPMENT_TEAM = Q494Q8N6JY;
 				INFOPLIST_FILE = "ObjectWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.chuangdianke.ObjectCDemo.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.xiaodev.ObjectCDemo.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
