@@ -22,7 +22,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    
+    NSNumber *imageType = nil;
+    NSLog(@"==%@",@(imageType.integerValue));
     return YES;
 }
 

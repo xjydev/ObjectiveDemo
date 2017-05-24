@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C2488251E5A98CA00A0C2FC /* XXAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2488241E5A98CA00A0C2FC /* XXAlertView.m */; };
+		6C2488281E5A99E100A0C2FC /* UIDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C2488271E5A99E100A0C2FC /* UIDemoViewController.m */; };
 		6C388C0E1DD94BFB00AF1B2E /* FileManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C388C0D1DD94BFB00AF1B2E /* FileManagerViewController.m */; };
 		6C3D44621E07950F00B5E1EF /* EmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3D44611E07950F00B5E1EF /* EmailViewController.m */; };
 		6C3D44641E07957600B5E1EF /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C3D44631E07957600B5E1EF /* MessageUI.framework */; };
+		6C46E13B1ED51CDC0026A1A8 /* AttributeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C46E13A1ED51CDC0026A1A8 /* AttributeLabel.m */; };
 		6C5EA57D1DBA09370060CCCF /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5EA57C1DBA09370060CCCF /* KeychainWrapper.m */; };
+		6C7003BC1EC55F8300EFBF6F /* View.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7003BB1EC55F8300EFBF6F /* View.storyboard */; };
+		6C7003C01EC561DC00EFBF6F /* QRcodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7003BF1EC561DC00EFBF6F /* QRcodeViewController.m */; };
 		6C908DD71DA88AE800EB8CF0 /* PasteLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C908DD21DA88AE700EB8CF0 /* PasteLabel.m */; };
 		6C908DD91DA88AE800EB8CF0 /* XView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C908DD61DA88AE700EB8CF0 /* XView.m */; };
 		6C908DDC1DA88B0C00EB8CF0 /* XWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C908DDB1DA88B0C00EB8CF0 /* XWindow.m */; };
@@ -36,6 +41,7 @@
 		6CC703CC1DEE8C1300CE145A /* AudioPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC703CB1DEE8C1300CE145A /* AudioPlayViewController.m */; };
 		6CC703CE1DEE9BFA00CE145A /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CC703CD1DEE9BFA00CE145A /* CoreAudio.framework */; };
 		6CC703D01DEE9C7000CE145A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CC703CF1DEE9C7000CE145A /* AVFoundation.framework */; };
+		6CE44EAB1E480C510031D56D /* FormatConvertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE44EAA1E480C510031D56D /* FormatConvertViewController.m */; };
 		6CEB73C81DF1AC4E00DB6D63 /* EncryptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEB73C71DF1AC4E00DB6D63 /* EncryptViewController.m */; };
 		9A2243D74E8BCDF649C5F454 /* Pods_ObjectCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E3E053ACC7BC101A8C1D8D /* Pods_ObjectCDemo.framework */; };
 		FE00A8AC1D5422C8008FEB3F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE00A8AB1D5422C8008FEB3F /* CoreText.framework */; };
@@ -125,14 +131,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6C2488231E5A98CA00A0C2FC /* XXAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XXAlertView.h; path = ObjectCDemo/UI/XXAlertView.h; sourceTree = SOURCE_ROOT; };
+		6C2488241E5A98CA00A0C2FC /* XXAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XXAlertView.m; path = ObjectCDemo/UI/XXAlertView.m; sourceTree = SOURCE_ROOT; };
+		6C2488261E5A99E100A0C2FC /* UIDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIDemoViewController.h; path = ObjectCDemo/UI/UIDemoViewController.h; sourceTree = SOURCE_ROOT; };
+		6C2488271E5A99E100A0C2FC /* UIDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIDemoViewController.m; path = ObjectCDemo/UI/UIDemoViewController.m; sourceTree = SOURCE_ROOT; };
 		6C388C0C1DD94BFB00AF1B2E /* FileManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManagerViewController.h; sourceTree = "<group>"; };
 		6C388C0D1DD94BFB00AF1B2E /* FileManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManagerViewController.m; sourceTree = "<group>"; };
 		6C3CF9351DB87AB000A9453C /* ObjectCDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ObjectCDemo.entitlements; sourceTree = "<group>"; };
 		6C3D44601E07950F00B5E1EF /* EmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailViewController.h; sourceTree = "<group>"; };
 		6C3D44611E07950F00B5E1EF /* EmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailViewController.m; sourceTree = "<group>"; };
 		6C3D44631E07957600B5E1EF /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		6C46E1391ED51CDC0026A1A8 /* AttributeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributeLabel.h; sourceTree = SOURCE_ROOT; };
+		6C46E13A1ED51CDC0026A1A8 /* AttributeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributeLabel.m; sourceTree = SOURCE_ROOT; };
 		6C5EA57B1DBA09370060CCCF /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
 		6C5EA57C1DBA09370060CCCF /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
+		6C7003BB1EC55F8300EFBF6F /* View.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = View.storyboard; sourceTree = "<group>"; };
+		6C7003BE1EC561DC00EFBF6F /* QRcodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRcodeViewController.h; sourceTree = SOURCE_ROOT; };
+		6C7003BF1EC561DC00EFBF6F /* QRcodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRcodeViewController.m; sourceTree = SOURCE_ROOT; };
 		6C908DD11DA88AE700EB8CF0 /* PasteLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PasteLabel.h; path = ObjectCDemo/UI/PasteLabel.h; sourceTree = SOURCE_ROOT; };
 		6C908DD21DA88AE700EB8CF0 /* PasteLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PasteLabel.m; path = ObjectCDemo/UI/PasteLabel.m; sourceTree = SOURCE_ROOT; };
 		6C908DD51DA88AE700EB8CF0 /* XView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XView.h; path = ObjectCDemo/UI/XView.h; sourceTree = SOURCE_ROOT; };
@@ -181,6 +196,8 @@
 		6CC703CB1DEE8C1300CE145A /* AudioPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayViewController.m; sourceTree = "<group>"; };
 		6CC703CD1DEE9BFA00CE145A /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		6CC703CF1DEE9C7000CE145A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6CE44EA91E480C510031D56D /* FormatConvertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormatConvertViewController.h; sourceTree = "<group>"; };
+		6CE44EAA1E480C510031D56D /* FormatConvertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormatConvertViewController.m; sourceTree = "<group>"; };
 		6CEB73C61DF1AC4E00DB6D63 /* EncryptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptViewController.h; sourceTree = "<group>"; };
 		6CEB73C71DF1AC4E00DB6D63 /* EncryptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptViewController.m; sourceTree = "<group>"; };
 		93E3E053ACC7BC101A8C1D8D /* Pods_ObjectCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -296,6 +313,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6C24881F1E5A979A00A0C2FC /* UIalert */ = {
+			isa = PBXGroup;
+			children = (
+				6C2488231E5A98CA00A0C2FC /* XXAlertView.h */,
+				6C2488241E5A98CA00A0C2FC /* XXAlertView.m */,
+			);
+			name = UIalert;
+			sourceTree = "<group>";
+		};
 		6C388C0B1DD94BD400AF1B2E /* FileManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -321,6 +347,15 @@
 				6C5EA57C1DBA09370060CCCF /* KeychainWrapper.m */,
 			);
 			name = Keychain;
+			sourceTree = "<group>";
+		};
+		6C7003BD1EC561C300EFBF6F /* QRcode */ = {
+			isa = PBXGroup;
+			children = (
+				6C7003BE1EC561DC00EFBF6F /* QRcodeViewController.h */,
+				6C7003BF1EC561DC00EFBF6F /* QRcodeViewController.m */,
+			);
+			name = QRcode;
 			sourceTree = "<group>";
 		};
 		6C908E0A1DA8BC3500EB8CF0 /* CoreData */ = {
@@ -365,6 +400,8 @@
 		6C99497F1D9E5E26000494C3 /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
+				6C46E1391ED51CDC0026A1A8 /* AttributeLabel.h */,
+				6C46E13A1ED51CDC0026A1A8 /* AttributeLabel.m */,
 			);
 			name = UILabel;
 			sourceTree = "<group>";
@@ -376,6 +413,15 @@
 				6CC703CB1DEE8C1300CE145A /* AudioPlayViewController.m */,
 			);
 			name = AudioPlay;
+			sourceTree = "<group>";
+		};
+		6CE44EA81E480BE70031D56D /* FormatConver */ = {
+			isa = PBXGroup;
+			children = (
+				6CE44EA91E480C510031D56D /* FormatConvertViewController.h */,
+				6CE44EAA1E480C510031D56D /* FormatConvertViewController.m */,
+			);
+			name = FormatConver;
 			sourceTree = "<group>";
 		};
 		6CEB73C51DF1AC3500DB6D63 /* Encrypt */ = {
@@ -417,6 +463,8 @@
 		FE00397A1D1138C5007294BB /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				6C7003BD1EC561C300EFBF6F /* QRcode */,
+				6C24881F1E5A979A00A0C2FC /* UIalert */,
 				6C99497F1D9E5E26000494C3 /* UILabel */,
 				6C99497E1D9E5DF3000494C3 /* PickerView */,
 				6C9949711D9E5AE1000494C3 /* LastTableViewController.h */,
@@ -425,6 +473,8 @@
 				6C99497A1D9E5B57000494C3 /* UIview */,
 				FEB99B021CF86BDE007B039F /* 文字 */,
 				FEC7618E1D2CA6F200EEF994 /* GIF */,
+				6C2488261E5A99E100A0C2FC /* UIDemoViewController.h */,
+				6C2488271E5A99E100A0C2FC /* UIDemoViewController.m */,
 			);
 			name = UI;
 			path = ../../../../Git/ipad_psr/HomeHelper/UI;
@@ -485,6 +535,7 @@
 				FE1EB7EE1CC497EC00D40400 /* XTabBarViewController.m */,
 				FE3490661D36422B001FC58C /* SwiftUIViewController.swift */,
 				FE11853B1CA37D680017CFEA /* Main.storyboard */,
+				6C7003BB1EC55F8300EFBF6F /* View.storyboard */,
 				FE5D30621D5343E700E7C44F /* Model.xcdatamodeld */,
 				FE11853E1CA37D680017CFEA /* Assets.xcassets */,
 				FE1185401CA37D680017CFEA /* LaunchScreen.storyboard */,
@@ -654,6 +705,7 @@
 		FEEA49B51CC66A930093ADBF /* grammar */ = {
 			isa = PBXGroup;
 			children = (
+				6CE44EA81E480BE70031D56D /* FormatConver */,
 				6C3D445F1E0794F900B5E1EF /* email */,
 				6CEB73C51DF1AC3500DB6D63 /* Encrypt */,
 				6CC703C91DEE8BFF00CE145A /* AudioPlay */,
@@ -860,6 +912,7 @@
 			files = (
 				FE288EE01CE2E98B008330E3 /* API.thrift in Resources */,
 				FE1185421CA37D680017CFEA /* LaunchScreen.storyboard in Resources */,
+				6C7003BC1EC55F8300EFBF6F /* View.storyboard in Resources */,
 				FE11853F1CA37D680017CFEA /* Assets.xcassets in Resources */,
 				FE11853D1CA37D680017CFEA /* Main.storyboard in Resources */,
 			);
@@ -952,6 +1005,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C3D44621E07950F00B5E1EF /* EmailViewController.m in Sources */,
+				6CE44EAB1E480C510031D56D /* FormatConvertViewController.m in Sources */,
 				FE11853A1CA37D680017CFEA /* SecondViewController.m in Sources */,
 				6C908DDF1DA88C1600EB8CF0 /* RCDemoViewController.m in Sources */,
 				FEEB27EE1CE0798C00E79568 /* UIDatePickerViewController.m in Sources */,
@@ -969,17 +1023,21 @@
 				6C908DDC1DA88B0C00EB8CF0 /* XWindow.m in Sources */,
 				FE11856E1CA37E6F0017CFEA /* MainTableViewController.m in Sources */,
 				FE1EB7EF1CC497EC00D40400 /* XTabBarViewController.m in Sources */,
+				6C46E13B1ED51CDC0026A1A8 /* AttributeLabel.m in Sources */,
 				6C908DF71DA88DD900EB8CF0 /* AlgorithmViewController.m in Sources */,
 				6CEB73C81DF1AC4E00DB6D63 /* EncryptViewController.m in Sources */,
 				6C908E171DA8BC6600EB8CF0 /* Car.m in Sources */,
 				FE288EE31CE2EA07008330E3 /* ThriftManger.m in Sources */,
 				6C908E091DA8BC1500EB8CF0 /* RunTimeViewController.m in Sources */,
 				6C908DFD1DA8BBBD00EB8CF0 /* BlockViewController.m in Sources */,
+				6C2488281E5A99E100A0C2FC /* UIDemoViewController.m in Sources */,
 				6C908E191DA8BC6600EB8CF0 /* CoredataViewController.m in Sources */,
 				6C908E1C1DA8BC6600EB8CF0 /* XManageCoreData.m in Sources */,
 				6C908E031DA8BBFB00EB8CF0 /* KvokvcViewController.m in Sources */,
+				6C7003C01EC561DC00EFBF6F /* QRcodeViewController.m in Sources */,
 				FE1185371CA37D680017CFEA /* FirstViewController.m in Sources */,
 				FE1185311CA37D680017CFEA /* main.m in Sources */,
+				6C2488251E5A98CA00A0C2FC /* XXAlertView.m in Sources */,
 				6C908DD71DA88AE800EB8CF0 /* PasteLabel.m in Sources */,
 				6CA2E0461D9D0F7F009C5BBE /* GIFImageView.m in Sources */,
 				6CC703CC1DEE8C1300CE145A /* AudioPlayViewController.m in Sources */,

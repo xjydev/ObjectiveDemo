@@ -24,20 +24,40 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    CGFloat heih = 20;
+    CGFloat heih = 80;
     
-    NSString * cLabelString = @"这是测试UILabel行间距的text。这是测试UILabel行间距的text。n 这是测试UILabel行间距的text。n 这是测试UILabel行间距的text。这是测试UILabel行间距的text。这是测试UILabel行间距的text。这是测试UILabel行间距的text。";
-    UILabel * cLabel = [[UILabel alloc]initWithFrame:CGRectMake(20, heih, 280, 200)];
+    NSString * cLabelString = @"在iOS开发中，常常会有一段文字显示不同的颜色和字体，或者给某几个文字加删除线或下划线的需求。之前在网上找了一些资料，有的是重绘UILabel的textLayer，\n有的是用HTML5实现的，都比较麻烦，而且很多UILabel的属性也不起作用了，效果都不理想设置段距。\n后来了解到NSMuttableAttstring（带属性的字符串），上面的一些需求都可以很简便的实现。";
+    UILabel * cLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, heih, self.view.frame.size.width, 200)];
     cLabel.numberOfLines = 0;
     cLabel.font = [UIFont systemFontOfSize:16];
     cLabel.textColor = [UIColor grayColor];
     
     NSMutableAttributedString * attributedString1 = [[NSMutableAttributedString alloc] initWithString:cLabelString];
     NSMutableParagraphStyle * paragraphStyle1 = [[NSMutableParagraphStyle alloc] init];
-    [paragraphStyle1 setLineSpacing:8];
-    [attributedString1 addAttribute:NSParagraphStyleAttributeName value:paragraphStyle1 range:NSMakeRange(0, [cLabelString length])];
+    [paragraphStyle1 setLineSpacing:8];//设置行距
+    [paragraphStyle1 setParagraphSpacing:20];//设置段距
+    [attributedString1 addAttribute:NSParagraphStyleAttributeName value:paragraphStyle1 range:NSMakeRange(0, [cLabelString length])];//设置上面的参数
+    
+    [attributedString1 addAttributes:@{NSStrokeWidthAttributeName:@(3),NSStrokeColorAttributeName:[UIColor redColor]} range:NSMakeRange(0, 10)];//设置空心
+    [attributedString1 addAttributes:@{NSForegroundColorAttributeName:[UIColor yellowColor],NSStrokeWidthAttributeName:@(-3),NSStrokeColorAttributeName:[UIColor redColor]} range:NSMakeRange(10, 10)];//设置黄心
+    
+    [attributedString1 addAttributes:@{NSStrikethroughStyleAttributeName:@(NSUnderlineStyleSingle),NSBaselineOffsetAttributeName:@0,NSStrikethroughColorAttributeName:[UIColor redColor]} range:NSMakeRange(20, 10)];//中部线
+    [attributedString1 addAttributes:@{NSUnderlineStyleAttributeName:@(NSUnderlineStyleSingle),NSUnderlineColorAttributeName:[UIColor redColor]} range:NSMakeRange(30, 10)];//中部线
+    
+    
+    NSShadow *shadow = [[NSShadow alloc]init];
+    shadow.shadowColor = [UIColor yellowColor];
+    shadow.shadowOffset = CGSizeMake(2, 4);
+    shadow.shadowBlurRadius = 5;
+    [attributedString1 addAttributes:@{NSShadowAttributeName:shadow,NSVerticalGlyphFormAttributeName:@0} range:NSMakeRange(40, 10)];//设置阴影
+    
+    [attributedString1 addAttributes:@{NSObliquenessAttributeName:@(1)} range:NSMakeRange(50, 10)];//设置斜体
+    
+     [attributedString1 addAttributes:@{NSBackgroundColorAttributeName:[UIColor yellowColor]} range:NSMakeRange(60, 10)];//设置斜体
+     [attributedString1 addAttributes:@{NSVerticalGlyphFormAttributeName:@1} range:NSMakeRange(70, 10)];//设置斜体
+    
     [cLabel setAttributedText:attributedString1];
-    [cLabel sizeToFit];
+    [cLabel sizeToFit];//label适配文字
     [self.view addSubview:cLabel];
     
     
@@ -55,7 +75,7 @@
 //        i++;
 //    }
     
-    XView  *view = [[XView  alloc]initWithFrame:CGRectMake(200, 64, 200, 200)];
+    XView  *view = [[XView  alloc]initWithFrame:CGRectMake(200, 364, 200, 200)];
     view.backgroundColor = [UIColor blueColor];
     [self.view addSubview:view];
     view.layer.cornerRadius = 100;

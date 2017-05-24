@@ -50,7 +50,7 @@
 #pragma mark -- NSOperation
 - (void)oparetionthreadDemo {
     NSOperationQueue *qu = [[NSOperationQueue alloc]init];
-    qu.maxConcurrentOperationCount = 2;
+    qu.maxConcurrentOperationCount = 2;//最大执行数同时。
     NSBlockOperation *bo = [NSBlockOperation blockOperationWithBlock:^{
         NSInteger i=0;
         while (i++<18) {
@@ -105,6 +105,7 @@
 //gcd的一个死锁
 - (void)lockNsthread
 {
+    //第一个参数Queue的名称，第二个参数，DISPATCH_QUEUE_SERIAL 或 NULL 表示创建串行队列，DISPATCH_QUEUE_CONCURRENT 表示创建并行队列
     dispatch_queue_t queue = dispatch_queue_create("queue", DISPATCH_QUEUE_SERIAL);
     NSLog(@"gcd1 == %@",[NSThread currentThread]);
     dispatch_async(queue, ^{
@@ -125,6 +126,7 @@
     
     //创建一个队列组
     dispatch_group_t group = dispatch_group_create();
+    //全局并行队列
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_group_async(group, queue, ^{
         NSInteger i = 0;
