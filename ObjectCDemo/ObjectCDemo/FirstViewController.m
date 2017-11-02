@@ -14,6 +14,8 @@
 #import "ThriftManger.h"
 #import "ObjectCDemo-Swift.h"
 #import <AssetsLibrary/AssetsLibrary.h>
+
+#import <AFNetworking/AFNetworking.h>
 @interface FirstViewController ()
 {
     
@@ -116,6 +118,11 @@
 //    imageView.backgroundColor = [UIColor yellowColor];
 //    [imageView setImage:[UIImage imageWithContentsOfFile:path]];
 //    [self.view addSubview:imageView];
+    [[AFHTTPSessionManager manager]GET:@"http://localhost:9100/htdocs/Basic/Server/APi.php?" parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+        NSLog(@"==%@",responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"error====%@",error);
+    }];
 }
 
 

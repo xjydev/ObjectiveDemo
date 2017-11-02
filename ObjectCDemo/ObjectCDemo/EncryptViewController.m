@@ -17,7 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSString *encryptStr = @"123456789011223344556677889900";
+    NSLog(@"en11111111111111111111");
+    NSString *encryptStr = @"rtyu";
     NSString *base64EncodeStr = [self encryptBase64WithStr:encryptStr];
     NSLog(@"base64 == %@",[self decryptBase64WithStr:base64EncodeStr]);
     NSLog(@"MD5 == %@",[self encryptMD5WithStr:encryptStr]);
@@ -27,7 +28,15 @@
     
     NSString *desStr = [self encryptDESWithStr:encryptStr key:@"123"];
     NSLog(@"des == %@",[self decryptDESStr:desStr key:@"123"]);
+//    base64 == 看看
+//    MD5 == e10cf4ea54a322fb9e0e132412487868
+//    aes == 看看
+//    des == (null)
     
+//    base64 == rtyu
+//    MD5 == e6724fc37c9e7c530980e81615029330
+//    aes == rtyu
+//    des == rtyu
 }
 
 /**

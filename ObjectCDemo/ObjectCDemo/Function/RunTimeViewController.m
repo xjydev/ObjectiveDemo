@@ -19,9 +19,17 @@
 - (void)dealloc {
     
 }
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    NSLog(@"viewWillAppear 22");
+}
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    NSLog(@"viewDidAppear 22");
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
+    NSLog(@" viewDidLoad 22");
     RunD *d = [[RunD alloc]init];
 #pragma mark -- 获取类名
     NSString *dName = [NSString stringWithCString:object_getClassName(d) encoding:NSUTF8StringEncoding];
