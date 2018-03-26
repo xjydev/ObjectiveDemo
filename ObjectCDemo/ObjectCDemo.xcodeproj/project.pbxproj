@@ -18,9 +18,7 @@
 		6C7003C01EC561DC00EFBF6F /* QRcodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C7003BF1EC561DC00EFBF6F /* QRcodeViewController.m */; };
 		6C908DD71DA88AE800EB8CF0 /* PasteLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C908DD21DA88AE700EB8CF0 /* PasteLabel.m */; };
 		6C908DD91DA88AE800EB8CF0 /* XView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C908DD61DA88AE700EB8CF0 /* XView.m */; };
-		6C908DDC1DA88B0C00EB8CF0 /* XWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C908DDB1DA88B0C00EB8CF0 /* XWindow.m */; };
 		6C908DDF1DA88C1600EB8CF0 /* RCDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C908DDE1DA88C1600EB8CF0 /* RCDemoViewController.m */; };
-		6C908DEE1DA88D7D00EB8CF0 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C908DED1DA88D7D00EB8CF0 /* TextViewController.m */; };
 		6C908DF11DA88DA400EB8CF0 /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C908DF01DA88DA400EB8CF0 /* RunLoopViewController.m */; };
 		6C908DF41DA88DC100EB8CF0 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C908DF31DA88DC100EB8CF0 /* ThreadViewController.m */; };
 		6C908DF71DA88DD900EB8CF0 /* AlgorithmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C908DF61DA88DD900EB8CF0 /* AlgorithmViewController.m */; };
@@ -41,6 +39,9 @@
 		6CC703CC1DEE8C1300CE145A /* AudioPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC703CB1DEE8C1300CE145A /* AudioPlayViewController.m */; };
 		6CC703CE1DEE9BFA00CE145A /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CC703CD1DEE9BFA00CE145A /* CoreAudio.framework */; };
 		6CC703D01DEE9C7000CE145A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CC703CF1DEE9C7000CE145A /* AVFoundation.framework */; };
+		6CD0732E2068C5B30084A080 /* XWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD0732C2068C5B30084A080 /* XWindow.m */; };
+		6CD073312068C5F70084A080 /* UIDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD0732F2068C5F70084A080 /* UIDatePickerViewController.m */; };
+		6CD073342068C60C0084A080 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD073332068C60C0084A080 /* TextViewController.m */; };
 		6CE44EAB1E480C510031D56D /* FormatConvertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE44EAA1E480C510031D56D /* FormatConvertViewController.m */; };
 		6CEB73C81DF1AC4E00DB6D63 /* EncryptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CEB73C71DF1AC4E00DB6D63 /* EncryptViewController.m */; };
 		9A2243D74E8BCDF649C5F454 /* Pods_ObjectCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E3E053ACC7BC101A8C1D8D /* Pods_ObjectCDemo.framework */; };
@@ -70,7 +71,6 @@
 		FE3490671D36422B001FC58C /* SwiftUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3490661D36422B001FC58C /* SwiftUIViewController.swift */; };
 		FE5D30611D53438200E7C44F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE5D30601D53438200E7C44F /* CoreData.framework */; };
 		FE5D30641D5343E700E7C44F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE5D30621D5343E700E7C44F /* Model.xcdatamodeld */; };
-		FEEB27EE1CE0798C00E79568 /* UIDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEB27ED1CE0798C00E79568 /* UIDatePickerViewController.m */; };
 		FEFA76391CF01D28004CF2C3 /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFA76381CF01D28004CF2C3 /* API.m */; };
 /* End PBXBuildFile section */
 
@@ -152,12 +152,8 @@
 		6C908DD21DA88AE700EB8CF0 /* PasteLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PasteLabel.m; path = ObjectCDemo/UI/PasteLabel.m; sourceTree = SOURCE_ROOT; };
 		6C908DD51DA88AE700EB8CF0 /* XView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XView.h; path = ObjectCDemo/UI/XView.h; sourceTree = SOURCE_ROOT; };
 		6C908DD61DA88AE700EB8CF0 /* XView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XView.m; path = ObjectCDemo/UI/XView.m; sourceTree = SOURCE_ROOT; };
-		6C908DDA1DA88B0C00EB8CF0 /* XWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XWindow.h; path = UI/XWindow.h; sourceTree = "<group>"; };
-		6C908DDB1DA88B0C00EB8CF0 /* XWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XWindow.m; path = UI/XWindow.m; sourceTree = "<group>"; };
 		6C908DDD1DA88C1600EB8CF0 /* RCDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCDemoViewController.h; path = Function/RCDemoViewController.h; sourceTree = "<group>"; };
 		6C908DDE1DA88C1600EB8CF0 /* RCDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCDemoViewController.m; path = Function/RCDemoViewController.m; sourceTree = "<group>"; };
-		6C908DEC1DA88D7D00EB8CF0 /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextViewController.h; path = UI/TextViewController.h; sourceTree = "<group>"; };
-		6C908DED1DA88D7D00EB8CF0 /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextViewController.m; path = UI/TextViewController.m; sourceTree = "<group>"; };
 		6C908DEF1DA88DA400EB8CF0 /* RunLoopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RunLoopViewController.h; path = Function/RunLoopViewController.h; sourceTree = "<group>"; };
 		6C908DF01DA88DA400EB8CF0 /* RunLoopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RunLoopViewController.m; path = Function/RunLoopViewController.m; sourceTree = "<group>"; };
 		6C908DF21DA88DC100EB8CF0 /* ThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThreadViewController.h; path = Function/ThreadViewController.h; sourceTree = "<group>"; };
@@ -196,6 +192,12 @@
 		6CC703CB1DEE8C1300CE145A /* AudioPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayViewController.m; sourceTree = "<group>"; };
 		6CC703CD1DEE9BFA00CE145A /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		6CC703CF1DEE9C7000CE145A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6CD0732C2068C5B30084A080 /* XWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XWindow.m; path = ObjectCDemo/UI/XWindow.m; sourceTree = SOURCE_ROOT; };
+		6CD0732D2068C5B30084A080 /* XWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XWindow.h; path = ObjectCDemo/UI/XWindow.h; sourceTree = SOURCE_ROOT; };
+		6CD0732F2068C5F70084A080 /* UIDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIDatePickerViewController.m; path = ObjectCDemo/UI/UIDatePickerViewController.m; sourceTree = SOURCE_ROOT; };
+		6CD073302068C5F70084A080 /* UIDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIDatePickerViewController.h; path = ObjectCDemo/UI/UIDatePickerViewController.h; sourceTree = SOURCE_ROOT; };
+		6CD073322068C60C0084A080 /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextViewController.h; path = ObjectCDemo/UI/TextViewController.h; sourceTree = SOURCE_ROOT; };
+		6CD073332068C60C0084A080 /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextViewController.m; path = ObjectCDemo/UI/TextViewController.m; sourceTree = SOURCE_ROOT; };
 		6CE44EA91E480C510031D56D /* FormatConvertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormatConvertViewController.h; sourceTree = "<group>"; };
 		6CE44EAA1E480C510031D56D /* FormatConvertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormatConvertViewController.m; sourceTree = "<group>"; };
 		6CEB73C61DF1AC4E00DB6D63 /* EncryptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptViewController.h; sourceTree = "<group>"; };
@@ -249,8 +251,6 @@
 		FE3490661D36422B001FC58C /* SwiftUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIViewController.swift; sourceTree = "<group>"; };
 		FE5D30601D53438200E7C44F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		FE5D30631D5343E700E7C44F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		FEEB27EC1CE0798C00E79568 /* UIDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIDatePickerViewController.h; path = ../../../../GitHub/ObjectiveDemo/ObjectCDemo/ObjectCDemo/UI/UIDatePickerViewController.h; sourceTree = "<group>"; };
-		FEEB27ED1CE0798C00E79568 /* UIDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIDatePickerViewController.m; path = ../../../../GitHub/ObjectiveDemo/ObjectCDemo/ObjectCDemo/UI/UIDatePickerViewController.m; sourceTree = "<group>"; };
 		FEFA76371CF01D28004CF2C3 /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
 		FEFA76381CF01D28004CF2C3 /* API.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = API.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -391,8 +391,8 @@
 		6C99497E1D9E5DF3000494C3 /* PickerView */ = {
 			isa = PBXGroup;
 			children = (
-				FEEB27EC1CE0798C00E79568 /* UIDatePickerViewController.h */,
-				FEEB27ED1CE0798C00E79568 /* UIDatePickerViewController.m */,
+				6CD073302068C5F70084A080 /* UIDatePickerViewController.h */,
+				6CD0732F2068C5F70084A080 /* UIDatePickerViewController.m */,
 			);
 			name = PickerView;
 			sourceTree = "<group>";
@@ -469,7 +469,7 @@
 				6C99497E1D9E5DF3000494C3 /* PickerView */,
 				6C9949711D9E5AE1000494C3 /* LastTableViewController.h */,
 				6C9949721D9E5AE1000494C3 /* LastTableViewController.m */,
-				FE11857D1CA3CA950017CFEA /* uiwindow */,
+				FE11857D1CA3CA950017CFEA /* uiwindows */,
 				6C99497A1D9E5B57000494C3 /* UIview */,
 				FEB99B021CF86BDE007B039F /* 文字 */,
 				FEC7618E1D2CA6F200EEF994 /* GIF */,
@@ -521,7 +521,6 @@
 			isa = PBXGroup;
 			children = (
 				6C3CF9351DB87AB000A9453C /* ObjectCDemo.entitlements */,
-				FEF43B411D376FAC0083B8B3 /* swiftUI */,
 				FE00397A1D1138C5007294BB /* UI */,
 				FE288EDA1CE2E98B008330E3 /* Thrift */,
 				FEEA49B51CC66A930093ADBF /* grammar */,
@@ -583,13 +582,13 @@
 			name = RunTime;
 			sourceTree = "<group>";
 		};
-		FE11857D1CA3CA950017CFEA /* uiwindow */ = {
+		FE11857D1CA3CA950017CFEA /* uiwindows */ = {
 			isa = PBXGroup;
 			children = (
-				6C908DDA1DA88B0C00EB8CF0 /* XWindow.h */,
-				6C908DDB1DA88B0C00EB8CF0 /* XWindow.m */,
+				6CD0732D2068C5B30084A080 /* XWindow.h */,
+				6CD0732C2068C5B30084A080 /* XWindow.m */,
 			);
-			name = uiwindow;
+			name = uiwindows;
 			path = ../../../../GitHub/ObjectiveDemo/ObjectCDemo/ObjectCDemo;
 			sourceTree = "<group>";
 		};
@@ -668,8 +667,8 @@
 		FEB99B021CF86BDE007B039F /* 文字 */ = {
 			isa = PBXGroup;
 			children = (
-				6C908DEC1DA88D7D00EB8CF0 /* TextViewController.h */,
-				6C908DED1DA88D7D00EB8CF0 /* TextViewController.m */,
+				6CD073322068C60C0084A080 /* TextViewController.h */,
+				6CD073332068C60C0084A080 /* TextViewController.m */,
 			);
 			name = "文字";
 			path = ../../../../GitHub/ObjectiveDemo/ObjectCDemo/ObjectCDemo;
@@ -734,13 +733,6 @@
 				6C908E021DA8BBFB00EB8CF0 /* KvokvcViewController.m */,
 			);
 			name = KVOKVC;
-			sourceTree = "<group>";
-		};
-		FEF43B411D376FAC0083B8B3 /* swiftUI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = swiftUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1008,7 +1000,6 @@
 				6CE44EAB1E480C510031D56D /* FormatConvertViewController.m in Sources */,
 				FE11853A1CA37D680017CFEA /* SecondViewController.m in Sources */,
 				6C908DDF1DA88C1600EB8CF0 /* RCDemoViewController.m in Sources */,
-				FEEB27EE1CE0798C00E79568 /* UIDatePickerViewController.m in Sources */,
 				FE5D30641D5343E700E7C44F /* Model.xcdatamodeld in Sources */,
 				6C5EA57D1DBA09370060CCCF /* KeychainWrapper.m in Sources */,
 				6C908E1A1DA8BC6600EB8CF0 /* Person.m in Sources */,
@@ -1020,11 +1011,11 @@
 				FEFA76391CF01D28004CF2C3 /* API.m in Sources */,
 				FE1185341CA37D680017CFEA /* AppDelegate.m in Sources */,
 				6C908DF41DA88DC100EB8CF0 /* ThreadViewController.m in Sources */,
-				6C908DDC1DA88B0C00EB8CF0 /* XWindow.m in Sources */,
 				FE11856E1CA37E6F0017CFEA /* MainTableViewController.m in Sources */,
 				FE1EB7EF1CC497EC00D40400 /* XTabBarViewController.m in Sources */,
 				6C46E13B1ED51CDC0026A1A8 /* AttributeLabel.m in Sources */,
 				6C908DF71DA88DD900EB8CF0 /* AlgorithmViewController.m in Sources */,
+				6CD073342068C60C0084A080 /* TextViewController.m in Sources */,
 				6CEB73C81DF1AC4E00DB6D63 /* EncryptViewController.m in Sources */,
 				6C908E171DA8BC6600EB8CF0 /* Car.m in Sources */,
 				FE288EE31CE2EA07008330E3 /* ThriftManger.m in Sources */,
@@ -1038,10 +1029,11 @@
 				FE1185371CA37D680017CFEA /* FirstViewController.m in Sources */,
 				FE1185311CA37D680017CFEA /* main.m in Sources */,
 				6C2488251E5A98CA00A0C2FC /* XXAlertView.m in Sources */,
+				6CD0732E2068C5B30084A080 /* XWindow.m in Sources */,
 				6C908DD71DA88AE800EB8CF0 /* PasteLabel.m in Sources */,
 				6CA2E0461D9D0F7F009C5BBE /* GIFImageView.m in Sources */,
 				6CC703CC1DEE8C1300CE145A /* AudioPlayViewController.m in Sources */,
-				6C908DEE1DA88D7D00EB8CF0 /* TextViewController.m in Sources */,
+				6CD073312068C5F70084A080 /* UIDatePickerViewController.m in Sources */,
 				6C9949731D9E5AE1000494C3 /* LastTableViewController.m in Sources */,
 				6C908DF11DA88DA400EB8CF0 /* RunLoopViewController.m in Sources */,
 				6C388C0E1DD94BFB00AF1B2E /* FileManagerViewController.m in Sources */,
